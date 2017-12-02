@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <title>Khóa Học</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jschung.js"></script>
+    <script src="js/course.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<noscript >
+    <div class="container">
+        <h2 >Xin lỗi trình duyệt của bạn không hỗ trợ javascript</h2>
+        <p>Xin vui lòng cập nhật hoặc tải về 1 trong các trình duyệt dưới đây:  </p>
+        <p>link ==><a href="https://www.mozilla.org/vi/firefox/new/">MOZILLA FIREFOX</a></p>
+        <p>link ==><a href="https://www.google.com/intl/vi/chrome/browser/desktop/index.html">GOOGLE CHROME</a></p>
+        <p>link ==><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48126">EDGE FOR WIN 10</a></p>
+        <p>link ==><a href="https://www.microsoft.com/vi-vn/download/details.aspx?id=40902">IE 11 FOR WIN7</a></p>
+    </div>
+</noscript>
+<body>
+<div class="container alert-ie8">
+    <h2 >Xin lỗi trình duyệt của bạn không hỗ trợ javascript</h2>
+    <p>Xin vui lòng cập nhật hoặc tải về 1 trong các trình duyệt dưới đây:  </p>
+    <p>link ==><a href="https://www.mozilla.org/vi/firefox/new/">MOZILLA FIREFOX</a></p>
+    <p>link ==><a href="https://www.google.com/intl/vi/chrome/browser/desktop/index.html">GOOGLE CHROME</a></p>
+    <p>link ==><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48126">EDGE FOR WIN 10</a></p>
+    <p>link ==><a href="https://www.microsoft.com/vi-vn/download/details.aspx?id=40902">IE 11 FOR WIN7</a></p>
+</div>
+
+<header class="container-fluid ">        <!-- HEADER -->
+    <div class="first-header row header-course">      <!-- CONTACT -->
+        <div class="container">
+            <ul>
+                <li class="none-border">
+                    <img src="img/logo/logo-v2.png" height="26" width="80"/>
+                </li>
+                <li class="none-border pdl-30">
+                    <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                </li>
+                <li class="none-border mrt-5"><a href="#">Quay lại khóa học</a></li>
+                <li class="none-border mrt-5"><a href="#">Trang cá nhân</a></li>
+
+                <li class="float-right none-border header-user-logged mrt-5 li-logged">
+                    <span>Chào Hoài</span>
+                    <i class="fa fa-user-o" aria-hidden="true"></i>&ensp;
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    <div class="account-manager">
+                        <ul>
+                            <li><a href="manager-valedic.html">Quản lý tài khoản</a></li>
+                            <li><a href="#">My playlist</a></li>
+                            <li><a href="index.html">Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="li-logged none-border header-icon-bell float-right " id="header-icon-bell">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <button class="alert-bell">12</button>
+                    <div class="arrow-up"></div>
+                    <div class="alert-content">
+                        <div class="tittle-alert">
+                            Thông báo
+                        </div>
+                        <ul class="ul-content">
+                            <li class="col-xs-12">
+                                <a href="#">
+                                    <div class="img-li float-left">
+                                        <img src="img/gv/alert1.jpg"/>
+                                    </div>
+                                    <div class="text-li float-left">
+                                        <p><span>Thủ khoa Nguyễn Phước Huynh</span> đã trả lời bình luận của bạn</p>
+                                        <div class="time">15 phút trước</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col-xs-12">
+                                <a href="#">
+                                    <div class="img-li float-left">
+                                        <img src="img/gv/alert1.jpg"/>
+                                    </div>
+                                    <div class="text-li float-left">
+                                        <p><span>Thủ khoa Nguyễn Phước Huynh</span> đã trả lời bình luận của bạn</p>
+                                        <div class="time">15 phút trước</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col-xs-12">
+                                <a href="#">
+                                    <div class="img-li float-left">
+                                        <img src="img/gv/alert1.jpg"/>
+                                    </div>
+                                    <div class="text-li float-left">
+                                        <p><span>Thủ khoa Nguyễn Phước Huynh</span> đã trả lời bình luận của bạn</p>
+                                        <div class="time">15 phút trước</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col-xs-12">
+                                <a href="#">
+                                    <div class="img-li float-left">
+                                        <img src="img/gv/alert1.jpg"/>
+                                    </div>
+                                    <div class="text-li float-left">
+                                        <p><span>Thủ khoa Nguyễn Phước Huynh</span> đã trả lời bình luận của bạn</p>
+                                        <div class="time">15 phút trước</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col-xs-12">
+                                <a href="#">
+                                    <div class="img-li float-left">
+                                        <img src="img/gv/alert1.jpg"/>
+                                    </div>
+                                    <div class="text-li float-left">
+                                        <p><span>Thủ khoa Nguyễn Phước Huynh</span> đã trả lời bình luận của bạn</p>
+                                        <div class="time">15 phút trước</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>       <!-- CONTACT -->
+</header>       <!-- HEADER -->
+
+<section class="container content-the-source">
+    <div class="row">
+        <div class="col-md-8">
+            <section id="video-source">
+                <video id="video"  controls>
+                    <source src="video/Xperia_dogsea_FHD.mp4" type="video/mp4">
+                </video>
+            </section>
+            <div class="clear-both"></div>
+            <!--<ul class="home-menu-slide tab-menu-the-source" >       &lt;!&ndash; tab-menu-the-source &ndash;&gt;-->
+                <!--<li class="active"><a class="home-meu-slide-item" data-toggle="tab" href="#tab-source-1">Lý thuyết</a></li>-->
+                <!--<li><a class="home-meu-slide-item" data-toggle="tab" href="#tab-source-2">bài tập</a></li>-->
+                <!--<li><a class="home-meu-slide-item" data-toggle="tab" href="#tab-source-3">đáp án</a></li>-->
+                <!--<li><a class="home-meu-slide-item" data-toggle="tab" href="#tab-source-4">trắc nghiệm</a></li>-->
+                <!--<li><a class="home-meu-slide-item" data-toggle="tab" href="#tab-source-5">trao đổi</a></li>-->
+            <!--</ul>      &lt;!&ndash; tab-menu-the-source &ndash;&gt;-->
+            <div class="tab-content">
+            <div class="  content-tab-source source-discuss" id="tab-source-5">     <!-- source-discuss -->
+                <textarea name="discuss" id="" class="textarea-discuss" placeholder="Đặt câu hỏi"></textarea>
+                <div class="the-discuss">       <!-- THE DISCUSS -->
+                    <div class="content-discuss">
+                        <p class="username-discuss"><span class="robo-bold">Đinh Lan Hương - </span>26 tháng 9, 2017</p>
+                        <p class="content-disscuss-1">Cô cho em hỏi, 1 tuần nên học bao nhiêu bài giảng để kịp chương trình và có hiệu quả ạ?
+                            Giờ em học thì có thì đến kỳ thi THPT Quốc gia có nắm đủ kiến thức không ạ?</p>
+                        <p>
+                        <span class="comment-like active ">
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                            <span class="number-like">2</span> <span>Thích</span>
+                        </span>
+                            <span class="comment-answer">
+                            <i class="fa fa-comments-o" aria-hidden="true"></i>
+                            1 Trả lời
+                        </span>
+                            <span class="comment-follow active">
+                            <img src="img/logo/follow.png" height="12" width="19"/>
+                            theo dõi
+                        </span>
+                        </p>
+                        <div class="the-sub-discuss">
+                            <p class="username-discuss"><span class="robo-bold">Đinh Lan Hương -</span> 26 tháng 9, 2017</p>
+                            <p class="content-disscuss-1">Cô cho em hỏi, 1 tuần nên học bao nhiêu bài giảng để kịp chương trình và có hiệu quả ạ? Giờ em học thì có thì đến kỳ thi THPT Quốc gia có nắm đủ kiến thức không ạ?</p>
+                            <p>
+                            <span class="comment-like active ">
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                <span class="number-like">2</span> <span>Thích</span>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                    <textarea class="textarea-sub-discuss"></textarea>
+                    <button class="btn btn-answer">Trả lời</button>
+                </div>      <!-- THE DISCUSS -->
+
+                <div class="the-discuss">       <!-- THE DISCUSS -->
+                    <div class="content-discuss">
+                        <p class="username-discuss"><span class="robo-bold">Đinh Lan Hương - </span>26 tháng 9, 2017</p>
+                        <p class="content-disscuss-1">Cô cho em hỏi, 1 tuần nên học bao nhiêu bài giảng để kịp chương trình và có hiệu quả ạ?
+                            Giờ em học thì có thì đến kỳ thi THPT Quốc gia có nắm đủ kiến thức không ạ?</p>
+                        <p>
+                        <span class="comment-like active ">
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                            <span class="number-like">2</span> <span>Thích</span>
+                        </span>
+                            <span class="comment-answer">
+                            <i class="fa fa-comments-o" aria-hidden="true"></i>
+                            1 Trả lời
+                        </span>
+                            <span class="comment-follow active">
+                            <img src="img/logo/follow.png" height="12" width="19"/>
+                            theo dõi
+                        </span>
+                        </p>
+                        <div class="the-sub-discuss">
+                            <p class="username-discuss"><span class="robo-bold">Đinh Lan Hương -</span> 26 tháng 9, 2017</p>
+                            <p class="content-disscuss-1">Cô cho em hỏi, 1 tuần nên học bao nhiêu bài giảng để kịp chương trình và có hiệu quả ạ? Giờ em học thì có thì đến kỳ thi THPT Quốc gia có nắm đủ kiến thức không ạ?</p>
+                            <p>
+                            <span class="comment-like active ">
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                <span class="number-like">2</span> <span>Thích</span>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                    <textarea class="textarea-sub-discuss"></textarea>
+                    <button class="btn btn-answer">Trả lời</button>
+                </div>      <!-- THE DISCUSS -->
+
+                <div class="the-discuss">       <!-- THE DISCUSS -->
+                    <div class="content-discuss">
+                        <p class="username-discuss"><span class="robo-bold">Đinh Lan Hương - </span>26 tháng 9, 2017</p>
+                        <p class="content-disscuss-1">Cô cho em hỏi, 1 tuần nên học bao nhiêu bài giảng để kịp chương trình và có hiệu quả ạ?
+                            Giờ em học thì có thì đến kỳ thi THPT Quốc gia có nắm đủ kiến thức không ạ?</p>
+                        <p>
+                        <span class="comment-like active ">
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                            <span class="number-like">2</span> <span>Thích</span>
+                        </span>
+                            <span class="comment-answer">
+                            <i class="fa fa-comments-o" aria-hidden="true"></i>
+                            1 Trả lời
+                        </span>
+                            <span class="comment-follow active">
+                            <img src="img/logo/follow.png" height="12" width="19"/>
+                            theo dõi
+                        </span>
+                        </p>
+                        <div class="the-sub-discuss">
+                            <p class="username-discuss"><span class="robo-bold">Đinh Lan Hương -</span> 26 tháng 9, 2017</p>
+                            <p class="content-disscuss-1">Cô cho em hỏi, 1 tuần nên học bao nhiêu bài giảng để kịp chương trình và có hiệu quả ạ? Giờ em học thì có thì đến kỳ thi THPT Quốc gia có nắm đủ kiến thức không ạ?</p>
+                            <p>
+                            <span class="comment-like active ">
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                <span class="number-like">2</span> <span>Thích</span>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                    <textarea class="textarea-sub-discuss"></textarea>
+                    <button class="btn btn-answer">Trả lời</button>
+                </div>      <!-- THE DISCUSS -->
+            </div>      <!-- source-discuss -->
+        </div>
+        </div>
+
+        <div class="col-md-4 right-content">
+            <ul class="tab-right-source home-menu-slide">       <!-- tab-right-source -->
+                <li class="active"><a class="the-tab-right home-meu-slide-item" data-toggle="tab" href="#tab-right-source-1">Nội dung</a></li>
+                <li><a class="the-tab-right home-meu-slide-item" data-toggle="tab" href="#tab-right-source-2">Ghi chú</a></li>
+            </ul>      <!-- tab-right-source -->
+
+            <div class="tab-content tab-content-right">     <!-- tab-content-right -->
+                <div class="tab-pane in active fade tab-right-source-1" id="tab-right-source-1">       <!--  tab-right-source-1  -->
+                    <div class="div-input-search tab-input">        <!-- SEARCH  -->
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn" type="submit">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>      <!-- SEARCH  -->
+                    <div class="row">
+                        <div class="div-line"></div>
+                    </div>
+                    <div class="clear-both"></div>
+                    <ul class="first-ul row">
+                        <li class="first-li first-li1">
+                            <div class="tittle-first-li">
+                                <span class="first-text">Phần 1. Học và Luyện chuyên sâu các dạng Toán nâng cao </span>
+                                <i class="float-right fa fa-angle-up" aria-hidden="true"></i>
+                            </div>
+                            <ul class="active secon-ul secon-ul-1">
+                                <li class="secon-li">
+                                    <div class="tittle-secon-li">
+                                        <img src="img/logo/title-li.png" height="15" width="18"/>
+                                        <div class="float-left done">
+                                            Lập số
+                                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                            <i class="fa fa-adjust" aria-hidden="true"></i>
+                                            <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                                        </div>
+                                        <i class="fa fa-caret-up float-right" aria-hidden="true"></i>
+                                        <i class="fa fa-caret-down float-right" aria-hidden="true"></i>
+                                        <div class="clear-both"></div>
+                                    </div>
+                                    <ul class="third-ul">
+                                        <li class="third-li">
+                                            <div class="show-video-course show-video" data-id="video/testvideo.mp4">
+                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                Phần 1
+                                            </div>
+                                        </li>
+                                        <li class="third-li">
+                                            <div class="show-video-course show-video">
+                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                Phần 2
+                                            </div>
+                                        </li>
+                                        <li class="third-li">
+                                            <div class="show-video-course show-video" data-id="video/testvideo.mp4">
+                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                Phần 3
+                                            </div>
+                                        </li>
+                                        <li class="third-li">
+                                            <div class="show-video-course show-video" data-id="video/testvideo.mp4">
+                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                Phần 4
+                                            </div>
+                                        </li>
+                                        <li class="third-li span-document-multichoice">
+                                            <button class="btn-document btn-document-multichoice" data-toggle="modal" data-target="#div-document" data-backdrop="static" data-keyboard="false">
+                                                <img src="img/logo/book.png" height="16" width="20"/>
+                                                Tài liệu
+                                            </button>
+                                            <button class="btn btn-get-multichoice btn-document-multichoice" data-toggle="modal" data-target="#div-multiple-choice" data-backdrop="static" data-keyboard="false">
+                                                <img src="img/logo/question.png" height="16" width="23"/>Trắc nghiệm
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="require-learned text-center active">
+                                    <p>Bạn cần làm bài trắc nghiệm để hoành thành phần này và có thể học phần tiếp theo!</p>
+                                    <button class="btn-document" data-toggle="modal" data-target="#div-document" data-backdrop="static" data-keyboard="false">
+                                        <img src="img/logo/book-white.png" height="16" width="20"/>
+                                        Tài liệu
+                                    </button>
+                                    <button class="btn btn-get-multichoice" data-toggle="modal" data-target="#div-multiple-choice" data-backdrop="static" data-keyboard="false">
+                                        <img src="img/logo/question-white.png" height="16" width="23"/>Trắc nghiệm
+                                    </button>
+                                </li>
+
+                            </ul>
+                            <div class="clear-both"></div>
+                        </li>
+
+                        <li class="first-li first-li2">
+                            <div class="tittle-first-li">
+                                <span class="first-text">Phần 1. Học và Luyện chuyên sâu các dạng Toán nâng cao </span>
+                                <i class="float-right fa fa-angle-up" aria-hidden="true"></i>
+                            </div>
+                            <ul class="active secon-ul secon-ul-1">
+                                <li class="secon-li">
+                                    <div class="tittle-secon-li">
+                                        <img src="img/logo/title-li.png" height="15" width="18"/>
+                                        <div class="float-left done">
+                                            Lập số
+                                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                            <i class="fa fa-adjust" aria-hidden="true"></i>
+                                            <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                                        </div>
+                                        <i class="fa fa-caret-up float-right" aria-hidden="true"></i>
+                                        <i class="fa fa-caret-down float-right" aria-hidden="true"></i>
+                                        <div class="clear-both"></div>
+                                    </div>
+                                    <ul class="third-ul">
+                                        <li class="third-li">
+                                            <div class="show-video-course show-video" data-id="video/testvideo.mp4">
+                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                Phần 1
+                                            </div>
+                                        </li>
+                                        <li class="third-li">
+                                            <div class="show-video-course show-video">
+                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                Phần 2
+                                            </div>
+                                        </li>
+                                        <li class="third-li">
+                                            <div class="show-video-course show-video" data-id="video/testvideo.mp4">
+                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                Phần 3
+                                            </div>
+                                        </li>
+                                        <li class="third-li">
+                                            <div class="show-video-course show-video" data-id="video/testvideo.mp4">
+                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                Phần 4
+                                            </div>
+                                        </li>
+                                        <li class="third-li span-document-multichoice">
+                                            <button class="btn-document">
+                                                <img src="img/logo/book.png" height="16" width="20"/>
+                                                Tài liệu
+                                            </button>
+                                            <button class="btn btn-get-multichoice">
+                                                <img src="img/logo/question.png" height="16" width="23"/>Trắc nghiệm
+                                            </button>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="require-learned text-center active">
+                                    <p>Bạn cần làm bài trắc nghiệm để hoành thành phần này và có thể học phần tiếp theo!</p>
+                                    <button class="btn-document">
+                                        <img src="img/logo/book-white.png" height="16" width="20"/>
+                                        Tài liệu
+                                    </button>
+                                    <button class="btn btn-get-multichoice">
+                                        <img src="img/logo/question-white.png" height="16" width="23"/>Trắc nghiệm
+                                    </button>
+                                </li>
+
+                            </ul>
+                            <div class="clear-both"></div>
+                        </li>
+
+                        <li class="first-li first-li3">
+                            <div class="tittle-first-li">
+                                <span class="first-text">Phần 1. Học và Luyện chuyên sâu các dạng Toán nâng cao </span>
+                                <i class="float-right fa fa-angle-up" aria-hidden="true"></i>
+                            </div>
+                            <ul class="active secon-ul secon-ul-1">
+                                <li class="secon-li">
+                                    <div class="tittle-secon-li">
+                                        <img src="img/logo/title-li.png" height="15" width="18"/>
+                                        <div class="float-left done">
+                                            Lập số
+                                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                            <i class="fa fa-adjust" aria-hidden="true"></i>
+                                            <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                                        </div>
+                                        <i class="fa fa-caret-up float-right" aria-hidden="true"></i>
+                                        <i class="fa fa-caret-down float-right" aria-hidden="true"></i>
+                                        <div class="clear-both"></div>
+                                    </div>
+                                    <ul class="third-ul">
+                                        <li class="third-li">
+                                            <div class="show-video-course show-video" data-id="video/testvideo.mp4">
+                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                Phần 1
+                                            </div>
+                                        </li>
+                                        <li class="third-li">
+                                            <div class="show-video-course show-video">
+                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                Phần 2
+                                            </div>
+                                        </li>
+                                        <li class="third-li">
+                                            <div class="show-video-course show-video" data-id="video/testvideo.mp4">
+                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                Phần 3
+                                            </div>
+                                        </li>
+                                        <li class="third-li">
+                                            <div class="show-video-course show-video" data-id="video/testvideo.mp4">
+                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                Phần 4
+                                            </div>
+                                        </li>
+                                        <li class="third-li span-document-multichoice">
+                                            <button class="btn-document">
+                                                <img src="img/logo/book.png" height="16" width="20"/>
+                                                Tài liệu
+                                            </button>
+                                            <button class="btn btn-get-multichoice">
+                                                <img src="img/logo/question.png" height="16" width="23"/>Trắc nghiệm
+                                            </button>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="require-learned text-center active">
+                                    <p>Bạn cần làm bài trắc nghiệm để hoành thành phần này và có thể học phần tiếp theo!</p>
+                                    <button class="btn-document">
+                                        <img src="img/logo/book-white.png" height="16" width="20"/>
+                                        Tài liệu
+                                    </button>
+                                    <button class="btn btn-get-multichoice">
+                                        <img src="img/logo/question-white.png" height="16" width="23"/>Trắc nghiệm
+                                    </button>
+                                </li>
+
+                            </ul>
+                            <div class="clear-both"></div>
+                        </li>
+                    </ul>
+                </div>      <!--  tab-right-source-1  -->
+
+                <div class="tab-pane fade tab-right-source-2" id="tab-right-source-2">      <!--  tab-right-source-1  -->
+                    <div class="col-md-12 div-textarea">
+                        <textarea name="" id="area-note" placeholder="Ghi chú"></textarea>
+                        <i>(*) Bạn nên dừng video để lưu chính xác thời gian</i>
+                    </div>
+                    <div class="clear-both"></div>
+                    <div class="tittle-ul tittle-ul-source-2 active">
+                        <div class="float-left">
+                            <i class="fa fa-minus-square" aria-hidden="true"></i>
+                            <i class="fa fa-plus-square" aria-hidden="true"></i>
+                        </div>
+                        <span class="float-left first-text">Xem chi tiết</span>
+                    </div>
+                    <div class="clear-both"></div>
+                    <ul class="active ul-note" >
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản</span></div>
+                            <div class="float-right">
+                                <div class="float-right">
+                                    <label>0:22</label>
+                                    <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản</span></div>
+                            <div class="float-right">
+                                <div class="float-right">
+                                    <label>15:22</label>
+                                    <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản</span></div>
+                            <div class="float-right">
+                                <div class="float-right">
+                                    <label>15:22</label>
+                                    <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản</span></div>
+                            <div class="float-right">
+                                <div class="float-right">
+                                    <label>0:29</label>
+                                    <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản</span></div>
+                            <div class="float-right">
+                                <div class="float-right">
+                                    <label>15:22</label>
+                                    <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản</span></div>
+                            <div class="float-right">
+                                <div class="float-right">
+                                    <label>15:22</label>
+                                    <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản</span></div>
+                            <div class="float-right">
+                                <div class="float-right">
+                                    <label>15:22</label>
+                                    <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản</span></div>
+                            <div class="float-right">
+                                <div class="float-right">
+                                    <label>15:22</label>
+                                    <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản</span></div>
+                            <div class="float-right">
+                                <div class="float-right">
+                                    <label>15:22</label>
+                                    <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản tìm chữ số tận cùng đơn giản </span></div>
+                            <div class="float-right">
+                                <div class="float-right">
+                                    <label>5:15:22</label>
+                                    <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản tìm chữ số tận cùng đơn giản </span></div>
+                            <div class="float-right">
+                                <label>15:22</label>
+                                <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản</span></div>
+                            <div class="float-right">
+                                <div class="float-right">
+                                    <label>15:22</label>
+                                    <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản</span></div>
+                            <div class="float-right">
+                                <div class="float-right">
+                                    <label>15:22</label>
+                                    <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản</span></div>
+                            <div class="float-right">
+                                <div class="float-right">
+                                    <label>15:22</label>
+                                    <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản</span></div>
+                            <div class="float-right">
+                                <div class="float-right">
+                                    <label>15:22</label>
+                                    <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left"><span>Cách tìm chữ số tận cùng đơn giản tìm chữ số tận cùng đơn giản </span></div>
+                            <div class="float-right">
+                                <div class="float-right">
+                                    <label>01:15:22</label>
+                                    <div class="delete-note float-right"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                    </ul>
+                </div>      <!--  tab-right-source-2  -->
+            </div>
+
+            <div class="source-final col-md-12">        <!-- source-final  -->
+                <div class="h5-source-final row">       <!--  h5-source-final  -->
+                    <h5>bạn đã hoàn thành</h5>
+                </div>      <!--  h5-source-final  -->
+                <p class="text-center p-percent"><span id="percent-leared">10</span> %</p>
+                <div     class="text-center percent-semicircle">
+                    <div class="aroud-rotate">
+                        <ul class="chart-percent">
+                            <li class="learned">
+                            </li>
+                            <div class="item-line"></div>
+
+                        </ul>
+                        <div class="needle">
+                            <img src="img/logo/needle.png" height="13" width="140"/>
+                        </div>
+                    </div>
+
+                    <p>
+                        <span class="float-left">Bắt đầu</span>
+                        <span class="float-right">Hoàn thành</span>
+                        <div class="clear-both"></div>
+                    </p>
+                </div>
+                <div class="three-icon-source-final">
+                    <i class="fa fa-circle-thin" aria-hidden="true"></i><span>&ensp;-&ensp;Chưa học</span>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i><span>&ensp;-&ensp;Đang học</span>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i><span>&ensp;-&ensp;Đã hoàn thành</span>
+                </div>
+                <div class="row row-div-line">
+                    <div class="div-line"></div>
+                </div>
+                <div class="text-center div-see-source-final">
+                    Hãy chọn <a>Kiểm tra cuối khóa</a>, hoàn thành bài kiểm tra để nhận chứng nhận của chúng tôi!
+                    <button class="btn btn-default btn-see-source-final text-center">Kiểm tra cuối khóa</button>
+                </div>
+            </div>      <!-- source-final  -->
+        </div>
+    </div>
+</section>
+
+<div class="div-multiple-choice modal fade" id="div-multiple-choice">       <!-- div-multiple-choice  -->
+    <div class="modal-dialog modal-lg">     <!--    modal-dialog    -->
+        <div class="modal-content">      <!--    modal-content   -->
+            <div class="modal-header text-center">
+                <button type="button" class="close" >&times;</button>
+                Trắc nghiệm chủ đề 4. tìm số chưa biết dựa vào dấu hiệu chia hết
+            </div>
+            <div class="modal-footer">       <!--    modal-footer    -->
+                <div class="row first-content">      <!-- FIRST CONTENT  -->
+                    <div class="col-md-6 left-content moder-left-content">
+                        <div class="text-justify">
+                            <h5 class="text-left">Câu 1:</h5>
+                            <p>Cho hàm số y = x3 + 3mx2 - m3 có đồ thị (Cm) và đường thẳng d : y = m2x + 2m3 . Biết rằng m1, m2 (m1 > m2) là hai giá trị thực của m để đường thẳng
+                                d cắt đồ thị (Cm) tại 3 điểm phân biệt có hoành độ x1, x2, x3, thỏa x14 + x24 + x34 = 83 . Phát biểu nào sau đây là đúng về quan hệ giữa hai giá trị m1, m2?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-content moder-right-content">     <!-- right-content  -->
+                        <div class="first-content-right">        <!-- first-content-right  -->
+                            <h6>
+                                <img src="img/logo/clock.png" height="23" width="20"/>
+                                <span id="time">25s</span>
+                            </h6>
+                            <div class="radio-wrap float-left">
+                                <div class="item-radio">
+                                    <input type='radio' value='1' name='radio' id='radio1'/>
+                                    <label for='radio1' class="float-left first-label">A</label>
+                                    <label for="radio1" class="float-left secon-label">Cuộc thi số 1</label>
+                                    <div class="clear-both"></div>
+                                </div>
+                                <div class="item-radio">
+                                    <input type='radio' value='1' name='radio' id='radio2'/>
+                                    <label for='radio2' class="float-left first-label">B</label>
+                                    <label for='radio2' class="float-left secon-label">Cuộc thi số 2</label>
+                                    <div class="clear-both"></div>
+                                </div>
+                                <div class="item-radio">
+                                    <input type='radio' value='1' name='radio' id='radio3'/>
+                                    <label for='radio3' class="float-left first-label">C</label>
+                                    <label for="radio3" class="float-left secon-label">Cuộc thi số 3</label>
+                                    <div class="clear-both"></div>
+                                </div>
+                                <div class="item-radio">
+                                    <input type='radio' value='1' name='radio' id='radio4'/>
+                                    <label for='radio4' class="float-left first-label">D</label>
+                                    <label for="radio4" class="float-left secon-label">Cuộc thi số 4</label>
+                                    <div class="clear-both"></div>
+                                </div>
+                            </div>
+                        </div>       <!-- first-content-right  -->
+                    </div>      <!-- right-content  -->
+                </div>       <!-- FIRST CONTENT  -->
+
+                <div class="row secon-content">     <!-- SECON CONTENT  -->
+                    <div class="col-md-6 div-total-left">
+                        <div class="total-left-content">
+                            <div class="float-left total-time">
+                                <label>Thời gian:</label>
+                                <span id="time-total">01:55:20</span>
+                            </div>
+                            <div class="float-left total-score">
+                                <label for="">Điểm số:</label>
+                                <span>0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 div-total-right">
+                        <button class="btn-default btn btn-next-modal" data-dismiss="modal" data-toggle="modal" data-target="#div-final">Kế tiếp  <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>      <!-- SECON CONTENT  -->
+
+            </div>       <!--    modal-footer    -->
+        </div>       <!--    modal-content   -->
+    </div>      <!--    modal-dialog    -->
+</div>      <!-- div-multiple-choice  -->
+
+<div class="div-document modal fade" id="div-document">       <!-- div-document  -->
+    <div class="modal-dialog modal-lg">     <!--    modal-dialog    -->
+        <div class="modal-content">      <!--    modal-content   -->
+            <div class="modal-header">
+                <button type="button" class="close" >&times;</button>
+                Tài liệu khóa luyện thi violympic toán 5
+            </div>
+            <div class="modal-body">       <!--    modal-footer    -->
+                <h6>Lý thuyết</h6>
+                <p>Bài số 1: Tìm một phân số biết mẫu số hơn tử số 45 đơn vị và biết phân số đó có giá trị bằng 2/5
+                    Trả lời: Phân số đó là: 30/75</p>
+                <p>Bài số 1: Tìm một phân số biết mẫu số hơn tử số 45 đơn vị và biết phân số đó có giá trị bằng 2/5
+                    Trả lời: Phân số đó là: 30/75</p>
+                <p>Bài số 1: Tìm một phân số biết mẫu số hơn tử số 45 đơn vị và biết phân số đó có giá trị bằng 2/5
+                    Trả lời: Phân số đó là: 30/75</p>
+                <p>Bài số 1: Tìm một phân số biết mẫu số hơn tử số 45 đơn vị và biết phân số đó có giá trị bằng 2/5
+                    Trả lời: Phân số đó là: 30/75</p>
+                <p>Bài số 1: Tìm một phân số biết mẫu số hơn tử số 45 đơn vị và biết phân số đó có giá trị bằng 2/5
+                    Trả lời: Phân số đó là: 30/75</p>
+                <p>Bài số 1: Tìm một phân số biết mẫu số hơn tử số 45 đơn vị và biết phân số đó có giá trị bằng 2/5
+                    Trả lời: Phân số đó là: 30/75</p>
+                <button class="btn btn-download-ex">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    Bài tập.pdf
+                </button>
+                <button class="btn btn-download-an">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    Đáp án.pdf
+                </button>
+            </div>       <!--    modal-footer    -->
+        </div>       <!--    modal-content   -->
+    </div>      <!--    modal-dialog    -->
+</div>
+
+<div class=" modal fade" id="div-final">       <!-- div-final  -->
+    <div class="modal-dialog modal-md">     <!--    modal-dialog    -->
+        <div class="modal-content text-center">      <!--    modal-content   -->
+            <img src="img/body/logo-cup.png" height="185" width="185"/>
+            <h6>Rất tiếc Bạn chưa hoàn thành!</h6>
+            <p>Điểm số của bạn là:</p>
+            <p class="score-final">45 điểm</p>
+            <button class="btn-again-question">Làm lại trắc nghiệm</button>
+        </div>       <!--    modal-content   -->
+    </div>      <!--    modal-dialog    -->
+</div>      <!-- div-multiple-choice  -->
+
+<footer class="footer-desktop">     <!-- FOOTER DESKTOP -->
+    <section class="first-footer">
+        <div class="container">
+            <div class="logo-sent-mail float-left">
+                <img src="img/logo/logo-mail.png" height="46" width="91"/>
+            </div>
+            <div class="text-decoration-mail float-left">
+                <span>để không bỏ lỡ thông tin hữu ích từ chúng tôi</span>
+                <p>Hãy đăng ký nhận e-mail</p>
+            </div>
+
+            <div class="input-group float-right" style="z-index: 0;">
+                <input class="form-control " placeholder="Nhập địa chỉ e-mail" type="email" name="email">
+                <div class="input-group-btn">
+                    <button class="btn btn-default btn-signup-email" type="submit">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secon-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <ul>
+                                <p>Hỗ trợ học sinh</p>
+                                <li><a href="#">Các câu hỏi thường gặp</a></li>
+                                <li><a href="#">Hướng dẫn thanh toán học phí</a></li>
+                                <li><a href="#">Chính sách hoàn học phí</a></li>
+                                <li><a href="#">Hotline: 0982 780 986</a></li>
+                                <li><a href="#">CSKH: 0982 780 986</a></li>
+                                <li><a href="#">Hỗ trợ:Từ 8h00 - 22h00 hàng ngày</a></li>
+                                <li><a href="#">Email: ìnfo@hoccungthukhoa.vn</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 ">
+                            <ul>
+                                <p>Giới thiệu</p>
+                                <li><a href="#">Giới thiệu học cùng thủ khoa</a></li>
+                                <li><a href="#">Danh sách khóa học</a></li>
+                                <li><a href="#">Điều khoản dịch vụ và chính sách bảo mật</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul>
+                                <p>Thanh toán an toàn</p>
+                                <li><a href="#">Thanh toán qua ngân hàng</a></li>
+                                <li><a href="#">Thanh toán qua thẻ điện thoại, Mclass</a></li>
+                                <li><a href="#">Thanh toán qua COD (thu tiền tận nơi)</a></li>
+                                <li><a href="#">Thanh toán bằng tiền mặt tại văn phòng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 div-btn-collab">
+                    <button class="btn btn-default btn-collaborate">
+                        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>&ensp;Hợp tác giảng dạy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>       <!-- FOOTER DESKTOP -->
+
+<footer class="footer-smart">
+    <section class="first-footer first-footer-smart">
+        <div class="container text-center">
+            <div class="logo-sent-mail float-left">
+                <img src="img/logo/logo-mail.png" class="img-responsive"/>
+            </div>
+            <div class="text-decoration-mail float-left">
+                <span>để không bỏ lỡ thông tin hữu ích từ chúng tôi</span>
+                <p>Hãy đăng ký nhận e-mail</p>
+            </div>
+
+            <div class="input-group" style="z-index: 0;">
+                <input class="form-control " placeholder="Nhập địa chỉ e-mail" type="email" name="email">
+                <div class="input-group-btn">
+                    <button class="btn btn-default btn-signup-email" type="submit">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secon-footer secon-footer-smart">
+        <div class="container text-center div-btn-collab">
+            <button class="btn btn-default btn-collaborate">
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>&ensp;Hợp tác giảng dạy
+            </button>
+        </div>
+        <!--<div class="clear-both"></div>-->
+        <div class="container support-smart">
+            <div class="row">
+                <div class="col-xs-5">
+                    <ul>
+                        <p>Hỗ trợ học sinh</p>
+                        <li><a href="#">Các câu hỏi thường gặp</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán học phí</a></li>
+                        <li><a href="#">Chính sách hoàn học phí</a></li>
+                        <li><a href="#">Hotline: 0982 780 986</a></li>
+                        <li><a href="#">CSKH: 0982 780 986</a></li>
+                        <li><a href="#">Hỗ trợ:Từ 8h00 - 22h00 hàng ngày</a></li>
+                        <li><a href="#">Email: ìnfo@hoccungthukhoa.vn</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-7">
+                    <ul>
+                        <p>Giới thiệu</p>
+                        <li><a href="#">Giới thiệu học cùng thủ khoa</a></li>
+                        <li><a href="#">Danh sách khóa học</a></li>
+                        <li><a href="#">Điều khoản dịch vụ và chính sách bảo mật</a></li>
+                    </ul>
+                    <ul>
+                        <p>Thanh toán an toàn</p>
+                        <li><a href="#">Thanh toán qua ngân hàng</a></li>
+                        <li><a href="#">Thanh toán qua thẻ điện thoại, Mclass</a></li>
+                        <li><a href="#">Thanh toán qua COD (thu tiền tận nơi)</a></li>
+                        <li><a href="#">Thanh toán bằng tiền mặt tại văn phòng</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="clear-both"></div>
+    </section>
+</footer>       <!-- FOOTER SMART -->
+
+</body>
+
+<script>
+
+</script>
+</html>
+

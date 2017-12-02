@@ -1,0 +1,2764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <title>Quản lý thủ khoa</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jschung.js"></script>
+    <link rel="stylesheet" href="sumernote/summernote-bs4.css">
+    <script src="sumernote/summernote-bs4.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/manager-valedic.js"></script>
+
+</head>
+<noscript >
+    <div class="container">
+        <h2 >Xin lỗi trình duyệt của bạn không hỗ trợ javascript</h2>
+        <p>Xin vui lòng cập nhật hoặc tải về 1 trong các trình duyệt dưới đây:  </p>
+        <p>link ==><a href="https://www.mozilla.org/vi/firefox/new/">MOZILLA FIREFOX</a></p>
+        <p>link ==><a href="https://www.google.com/intl/vi/chrome/browser/desktop/index.html">GOOGLE CHROME</a></p>
+        <p>link ==><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48126">EDGE FOR WIN 10</a></p>
+        <p>link ==><a href="https://www.microsoft.com/vi-vn/download/details.aspx?id=40902">IE 11 FOR WIN7</a></p>
+    </div>
+</noscript>
+<body>
+<div class="container alert-ie8">
+    <h2 >Xin lỗi trình duyệt của bạn không hỗ trợ javascript</h2>
+    <p>Xin vui lòng cập nhật hoặc tải về 1 trong các trình duyệt dưới đây:  </p>
+    <p>link ==><a href="https://www.mozilla.org/vi/firefox/new/">MOZILLA FIREFOX</a></p>
+    <p>link ==><a href="https://www.google.com/intl/vi/chrome/browser/desktop/index.html">GOOGLE CHROME</a></p>
+    <p>link ==><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48126">EDGE FOR WIN 10</a></p>
+    <p>link ==><a href="https://www.microsoft.com/vi-vn/download/details.aspx?id=40902">IE 11 FOR WIN7</a></p>
+</div>
+
+<header class="container-fluid">        <!-- HEADER -->
+    <div class="first-header row">      <!-- CONTACT -->
+        <div class="container">
+            <ul>
+                <li class="none-border">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <span class="text-upper">Hotline: </span>
+                    <span class="robo-bold">0982.117.702</span>
+                </li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Đội ngũ giảng viên</a></li>
+                <li class="none-border"><a href="#">Liên hệ</a></li>
+                <li class="float-right none-border header-signup"  >
+                    <button class="btn-header-signup" data-toggle="modal" data-target="#modalSignup">
+                        <i class="fa fa-user-plus" aria-hidden="true">&ensp;Đăng ký</i>
+                    </button>
+
+                </li>
+
+                <li class="float-right none-border header-signin">
+                    <button class="btn-header-signup" data-toggle="modal" data-target="#modalSignin">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>&ensp;Đăng nhập
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>       <!-- CONTACT -->
+    <nav class="second-header">     <!-- MENNU -->
+        <div class="container">
+            <div class="header-menu">       <!-- HEADER MENU -->
+                <div class="header-menu-item">
+                    <img src="img/logo/logo.png" height="40" width="123"/>
+                </div>
+                <div class="border-bottom home-icon-home header-menu-item">
+                    <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                </div>
+                <div class="home-li-advanced header-menu-item">
+                    <a>Khóa học nâng cao&ensp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+
+                    <div class="container home-first-menu first-menu-advanced">     <!-- MENU ADVANCED -->
+                        <div class="first-menu-arrow-up"></div>
+                        <div class="row">
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-primary-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối tiểu học</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-junior-advanced-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối trung học cơ sở</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-advanced-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối trung học phổ thông</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+                            <ul class="ul-school">
+                                <li class="text-center">
+                                    <img src="img/logo/logo-menu.png" height="254" width="242"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>      <!-- MENU ADVANCED -->
+
+                <div class="home-li-basic header-menu-item">        <!-- MENU BASIC -->
+                    <a>Khóa học cơ bản&ensp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="container home-first-menu first-menu-basic">
+                        <div class="first-menu-arrow-up first-menu-basic-arrow-up"></div>
+                        <div class="row">
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-primary-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối tiểu học</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-junior-advanced-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối trung học cơ sở</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-advanced-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối trung học phổ thông</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+                            <ul class="ul-school">
+                                <li class="text-center">
+                                    <img src="img/logo/logo-menu.png" height="254" width="242"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>      <!-- MENU BASIC -->
+
+                <div class="float-right header-menu-item header-menu-cart">      <!-- HEADER_MENU_ITEM -->
+                    <div class="shopping-cart">
+                        <img src="img/logo/cart.png" height="18" width="18"/>
+                        <div class="number-shopping-cart">8</div>
+                        <div class="tooltip-shopping-cart">
+                            <p>Bạn có 2 khóa học trong giỏ hàng</p>
+                            <div class="div-line"></div>
+                            <ul>
+                                <li>
+                                    <div class="img-shopping-cart float-left">
+                                        <a href="#"><img src="img/gv/gv3-bgc.png" /></a>
+                                    </div>
+                                    <div class="text-shopping-cart float-left">
+                                        <a href="#"><span>Bồi dưỡng Toán lớp 5 (2017-2018)</span></a>
+                                        <p><span>680.000</span>đ</p>
+                                    </div>
+                                    <div class="float-right"><i class="fa fa-trash" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="clear-both"></div>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li>
+                                    <div class="img-shopping-cart float-left">
+                                        <a href="#"><img src="img/gv/gv2-bgc.png" /></a>
+                                    </div>
+                                    <div class="text-shopping-cart float-left">
+                                        <a href="#"><span>Ôn luyện Vật Lý lớp 6 (2017-2018)</span></a>
+                                        <p><span>680.000</span> đ</p>
+                                    </div>
+                                    <div class="float-right"><i class="fa fa-trash" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="clear-both"></div>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-default btn-see-cart float-left">
+                                Xem giỏ hàng
+                            </a>
+                            <a href="#" class="btn btn-default btn-paid-cart float-right">
+                                Thanh toán
+                            </a>
+                        </div>      <!-- tooltip-shopping-cart -->
+                    </div>      <!-- SHOPPPING CART -->
+                </div>      <!-- HEADER_MENU_ITEM -->
+
+                <div class="float-right li-input-search header-menu-item">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>      <!-- HEARDER MENU -->
+        </div>
+    </nav>      <!-- MENNU -->
+</header>       <!-- HEADER -->
+
+<header class="header-smart header-smart-ondest">        <!-- HEADER SMART -->
+    <nav class=" nav-smart">
+        <div class="container">
+            <span class="btn-nav-open-smart float-left">
+                ☰
+            </span>
+
+            <a href="m-index.html" class="logo-smart">
+                <img src="img/logo/logo-smart.png" height="40" width="123"/>
+            </a>
+            <div class="float-right user-smart float-left" data-toggle="modal" data-target="#modalLoginSmart">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+            </div>
+            <div class="float-right header-menu-item header-menu-cart header-menu-cart-smart">      <!-- HEADER_MENU_ITEM -->
+                <div class="shopping-cart">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <div class="number-shopping-cart">8</div>
+                    <div class="tooltip-shopping-cart">
+                        <p>Bạn có 2 khóa học trong giỏ hàng</p>
+                        <div class="div-line"></div>
+                        <ul>
+                            <li>
+                                <div class="img-shopping-cart float-left">
+                                    <a href="#"><img src="img/logo/shoppingcard.jpg" /></a>
+                                </div>
+                                <div class="text-shopping-cart float-left">
+                                    <a href="#"><span>Bồi dưỡng Toán lớp 5 (2017-2018)</span></a>
+                                    <p><span>680.000</span>đ</p>
+                                </div>
+                                <div class="float-right"><i class="fa fa-trash" aria-hidden="true"></i>
+                                </div>
+                                <div class="clear-both"></div>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <div class="img-shopping-cart float-left">
+                                    <a href="#"><img src="img/logo/shoppingcard.jpg" /></a>
+                                </div>
+                                <div class="text-shopping-cart float-left">
+                                    <a href="#"><span>Ôn luyện Vật Lý lớp 6 (2017-2018)</span></a>
+                                    <p><span>680.000</span> đ</p>
+                                </div>
+                                <div class="float-right"><i class="fa fa-trash" aria-hidden="true"></i>
+                                </div>
+                                <div class="clear-both"></div>
+                                <div class="div-line"></div>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-default btn-see-cart float-left">
+                            Xem giỏ hàng
+                        </a>
+                        <a href="#" class="btn btn-default btn-paid-cart float-right">
+                            Thanh toán
+                        </a>
+                    </div>      <!-- tooltip-shopping-cart -->
+                </div>      <!-- SHOPPPING CART -->
+            </div>      <!-- HEADER_MENU_ITEM -->
+        </div>
+    </nav>
+    <div class="home-menu-smart1">
+        <ul class="col-md-12 smart-ul1">
+            <li>
+                <form class="navbar-form-search form-search">
+                    <div class="div-form-search input-group">
+                        <input type="text" class="form-control search-query" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="clear-both"></div>
+            </li>
+            <li class="smart-li1">
+                <div class="tittle-smart-li1">
+                    <h5 class="float-left">Khoá học cơ bản</h5>
+                    <i class="fa fa-angle-right float-right" aria-hidden="true"></i>
+                    <div class="clear-both"></div>
+                    <div class="div-line"></div>
+                </div>
+                <ul class="smart-ul2">
+                    <li class="smart-li2">
+                        <div class="tittle-smart-li2">
+                            <img src="img/logo/logo-smart-th.png"/>
+                            <span>Khối tiểu học</span>
+                            <div class="circle-ar-up float-right">
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="circle-ar-down float-right">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="clear-both"></div>
+                            <div class="div-line"></div>
+                        </div>
+                        <ul class="smart-ul3">
+                            <li>
+                                <a class="" href="list-subject.html">Lớp 1</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a href="#">Lớp 2</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 3</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 4</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 5</a>
+                                <div class="div-line"></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="smart-li2">
+                        <div class="tittle-smart-li2">
+                            <img src="img/logo/logo-smart-trunghoc.png"/>
+                            <span>Khối trung học cơ sở</span>
+                            <div class="circle-ar-up float-right">
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="circle-ar-down float-right">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="clear-both"></div>
+                            <div class="div-line"></div>
+                        </div>
+                        <ul class="smart-ul3">
+                            <li>
+                                <a class="" href="#">Lớp 6</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a href="#">Lớp 7</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 8</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 9</a>
+                                <div class="div-line"></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="smart-li2">
+                        <div class="tittle-smart-li2">
+                            <img src="img/logo/logo-smart-trunghoc.png" height="64" width="64"/>
+                            <span>Khối trung học phổ thông</span>
+                            <div class="circle-ar-up float-right">
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="circle-ar-down float-right">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="clear-both"></div>
+                            <div class="div-line"></div>
+                        </div>
+                        <ul class="smart-ul3">
+                            <li>
+                                <a class="" href="#">Lớp 10</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a href="#">Lớp 11</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 12</a>
+                                <div class="div-line"></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="smart-li1">
+                <div class="tittle-smart-li1">
+                    <h5 class="float-left">Khoá học nâng cao</h5>
+                    <i class="fa fa-angle-right float-right" aria-hidden="true"></i>
+                    <div class="clear-both"></div>
+                    <div class="div-line"></div>
+                </div>
+                <ul class="smart-ul2">
+                    <li class="smart-li2">
+                        <div class="tittle-smart-li2">
+                            <img src="img/logo/logo-smart-th.png"/>
+                            <span>Khối tiểu học</span>
+                            <div class="circle-ar-up float-right">
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="circle-ar-down float-right">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="clear-both"></div>
+                            <div class="div-line"></div>
+                        </div>
+                        <ul class="smart-ul3">
+                            <li>
+                                <a class="" href="list-subject.html">Lớp 1</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a href="#">Lớp 2</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 3</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 4</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 5</a>
+                                <div class="div-line"></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="smart-li2">
+                        <div class="tittle-smart-li2">
+                            <img src="img/logo/logo-smart-trunghoc.png"/>
+                            <span>Khối trung học cơ sở</span>
+                            <div class="circle-ar-up float-right">
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="circle-ar-down float-right">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="clear-both"></div>
+                            <div class="div-line"></div>
+                        </div>
+                        <ul class="smart-ul3">
+                            <li>
+                                <a class="" href="#">Lớp 6</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a href="#">Lớp 7</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 8</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 9</a>
+                                <div class="div-line"></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="smart-li2">
+                        <div class="tittle-smart-li2">
+                            <img src="img/logo/logo-smart-trunghoc.png" height="64" width="64"/>
+                            <span>Khối trung học phổ thông</span>
+                            <div class="circle-ar-up float-right">
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="circle-ar-down float-right">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="clear-both"></div>
+                            <div class="div-line"></div>
+                        </div>
+                        <ul class="smart-ul3">
+                            <li>
+                                <a class="" href="#">Lớp 10</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a href="#">Lớp 11</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 12</a>
+                                <div class="div-line"></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="li-smart-contact li-smart-contact1">
+                <h5><a href="#">Giới thiệu</a></h5>
+                <div class="div-line"></div>
+            </li>
+            <li class="li-smart-contact">
+                <h5><a href="#">Đội ngũ giảng viên</a></h5>
+                <div class="div-line"></div>
+            </li>
+            <li class="li-smart-contact">
+                <h5><a href="#">Tin tức</a></h5>
+                <div class="div-line"></div>
+            </li>
+            <li class="li-smart-contact">
+                <h5><a href="#">Liên hệ</a></h5>
+            </li>
+
+        </ul>
+    </div>
+    <div class="bgc-opa-smart"></div>
+</header>
+
+<!--  MODAL ĐĂNG NHẬP ĐĂNG KÝ-->
+<div class="modal fade" id="modalSignup" role="dialog">     <!-- DANG KY  -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Đăng ký tài khoản</h5>
+            </div>
+            <div class="modal-body">
+                <p class="text-center">Đăng ký tài khoản Học cùng thủ khoa để học ngay hôm nay</p>
+                <div class="div-input text-center">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="text" class="form-control" placeholder="Họ tên">
+                    <input type="password" class="form-control" placeholder="Mật khẩu">
+                    <input type="checkbox" class="checkbox"><label>Tôi đồng ý với các<span>&ensp;<a href="#">Điều khoản sử dụng</a></span></label>
+                    <button class="btn btn-defalt btn-modal-signin form-control"  data-dismiss="modal" data-toggle="modal" data-target="#modalCode">Tiếp theo <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-fot">
+                <div class="modal-contact">
+                    <div class="div-icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">(04) 3555 1938</a></span>
+                    <div class="div-icon secon-icon">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">contact@hoccungthukhoa.vn</a></span>
+                </div>
+            </div>
+        </div>      <!--  modal-content  -->
+    </div>      <!--  modal-dialog  -->
+</div>      <!--  modalSignup  -->
+
+<div class="modal fade" id="modalCode" role="dialog">     <!-- DANG KY  -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Đăng ký tài khoản</h5>
+            </div>
+            <div class="modal-body">
+                <p class="text-left">Bạn vui lòng nhập mã kích hoạt nhận được trong email đã đăng ký!</p>
+                <p>Sau 4 giờ nếu không kích hoạt, bạn phải đăng ký lại.</p>
+                <div class="div-input text-center">
+                    <input type="text" class="form-control" placeholder="Nhập mã kích hoạt">
+                    <p><a href="#">Bấm vào đây </a> nếu bạn chưa nhận được email kích hoạt.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="btn-defalt form-control btn-cancel" data-dismiss="modal">Hủy <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn-defalt btn-modal-code form-control" data-dismiss="modal" data-toggle="modal" data-target="#modalSuccess">Đăng ký <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-fot">
+                <div class="modal-contact">
+                    <div class="div-icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">(04) 3555 1938</a></span>
+                    <div class="div-icon secon-icon">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">contact@hoccungthukhoa.vn</a></span>
+                </div>
+            </div>
+        </div>      <!--  modal-content  -->
+    </div>      <!--  modal-dialog  -->
+</div>      <!--  modalSignup  -->
+
+<div class="modal fade" id="modalSuccess" role="dialog">     <!-- DANG KY  -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Đăng ký tài khoản</h5>
+            </div>
+            <div class="modal-body text-center">
+                <div class="logo-check "><img src="img/logo/check.png" height="60" width="60"/></div>
+                <p class="">Đăng ký thành công <br>
+                    tài khoản Học cùng thủ khoa.
+                </p>
+                <button class="btn btn-success-signup form-control" data-dismiss="modal">Hoàn tất</button>
+            </div>
+        </div>      <!--  modal-content  -->
+    </div>      <!--  modal-dialog  -->
+</div>      <!--  modalSuccess  -->
+
+<div class="modal fade" id="modalSignin" role="dialog">     <!-- DANG NHAP  -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Đăng nhập</h5>
+            </div>
+            <div class="modal-body">
+                <div class="div-logo-user text-center">
+                    <img src="img/logo/ava-login.png"/>
+                </div>
+                <div class="div-input text-center">
+                    <input type="text" class="form-control" placeholder="Tên tài khoản">
+                    <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+                    <button class="btn btn-defalt btn-modal-signin form-control">đăng nhập</button>
+                    <button class=" btn-modal-signup" data-dismiss="modal" data-toggle="modal" data-target="#modalSignup">Đăng ký tài khoản</button>
+                </div>
+                <div class="clear-both"></div>
+            </div>
+            <div class="modal-fot">
+                <div class="modal-contact">
+                    <div class="div-icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">(04) 3555 1938</a></span>
+                    <div class="div-icon secon-icon">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">contact@hoccungthukhoa.vn</a></span>
+                </div>
+            </div>
+        </div>      <!--  modal-content  -->
+    </div>      <!--  modal-dialog  -->
+</div>      <!--  modalSignin  -->
+
+<div class="modal fade" id="modalSubject" role="dialog">     <!-- DANG NHAP  -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Thống kê</h5>
+            </div>
+            <div class="modal-body text-center">
+                <p class="modal-sub-tittle">
+                    Giúp bé tự tin hơn khi vào lớp 1 (2016 - 2017)
+                </p>
+                <div class="modal-sub-img">
+                    <img src="img/gv/GV4-BGC.png" class="img-responsive"/>
+                </div>
+                <p class="cost-subject-slide">
+                    <span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span>
+                </p>
+                <p class="modal-sub-link">
+                    Link nguồn:
+                    <a href="#">
+                    https://www.facebook.com/thanhhoai99/906276869522003
+                    </a>
+                </p>
+                <table border="1">
+                    <tr>
+                        <th>Ngày</th>
+                        <th>User mua khóa học</th>
+                        <th>Hoa hồng</th>
+                        <th>Doanh thu</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            20/11/2017
+                        </td>
+                        <td class="robo-bold color-blue">
+                            Nguyễn Trần Thị Hoài Thu
+                        </td>
+                        <td>
+                            10%
+                        </td>
+                        <td class="robo-bold color-orange">
+                            68.000<span class="robo-medium">đ</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            20/11/2017
+                        </td>
+                        <td class="robo-bold color-blue">
+                            Nguyễn Trần Thị Hoài Thu
+                        </td>
+                        <td>
+                            10%
+                        </td>
+                        <td class="robo-bold color-orange">
+                            68.000<span class="robo-medium">đ</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            20/11/2017
+                        </td>
+                        <td class="robo-bold color-blue">
+                            Nguyễn Trần Thị Hoài Thu
+                        </td>
+                        <td>
+                            10%
+                        </td>
+                        <td class="robo-bold color-orange">
+                            68.000<span class="robo-medium">đ</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            20/11/2017
+                        </td>
+                        <td class="robo-bold color-blue">
+                            Nguyễn Trần Thị Hoài Thu
+                        </td>
+                        <td>
+                            10%
+                        </td>
+                        <td class="robo-bold color-orange">
+                            68.000<span class="robo-medium">đ</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            20/11/2017
+                        </td>
+                        <td class="robo-bold color-blue">
+                            Nguyễn Trần Thị Hoài Thu
+                        </td>
+                        <td>
+                            10%
+                        </td>
+                        <td class="robo-bold color-orange">
+                            68.000<span class="robo-medium">đ</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            20/11/2017
+                        </td>
+                        <td class="robo-bold color-blue">
+                            Nguyễn Trần Thị Hoài Thu
+                        </td>
+                        <td>
+                            10%
+                        </td>
+                        <td class="robo-bold color-orange">
+                            68.000<span class="robo-medium">đ</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            20/11/2017
+                        </td>
+                        <td class="robo-bold color-blue">
+                            Nguyễn Trần Thị Hoài Thu
+                        </td>
+                        <td>
+                            10%
+                        </td>
+                        <td class="robo-bold color-orange">
+                            68.000<span class="robo-medium">đ</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            20/11/2017
+                        </td>
+                        <td class="robo-bold color-blue">
+                            Nguyễn Trần Thị Hoài Thu
+                        </td>
+                        <td>
+                            10%
+                        </td>
+                        <td class="robo-bold color-orange">
+                            68.000<span class="robo-medium">đ</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>      <!--  modal-content  -->
+    </div>      <!--  modal-dialog  -->
+</div>      <!--  modalSubject  -->
+<section class="tittle-list-sub tittle-manager-valedic">
+    <div class="container">
+        <img id="tittle-img-ava" src="img/body/valedic.jpg"/>
+        <div class="tittle-manager-valedic-text">
+            <h5>thủ khoa nguyễn thị thanh hoài</h5>
+            <p>HCB Olympic Vật Lý Quốc tế 2015- 2016</p>
+        </div>
+    </div>
+</section>
+
+<section class="content-manager-valedic">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 menu-left-manager-valedic" >
+                <ul>
+                    <li class="active"><a data-toggle="tab" href="#menu1"><i class="fa fa-home"></i>Trang chủ</a></li>
+                    <li><a data-toggle="tab" href="#menu2"><i class="fa fa-book" aria-hidden="true"></i>
+                        Khóa học đang bán</a></li>
+                    <li><a data-toggle="tab" href="#menu3"><i class="fa fa-users" aria-hidden="true"></i>
+                        Học viên đã mua khóa học</a></li>
+                    <li><a data-toggle="tab" href="#menu4"><i class="fa fa-comments-o" aria-hidden="true"></i>
+                        Bình luận về khóa học</a></li>
+                    <li><a data-toggle="tab" href="#menu5"><i class="fa fa-link" aria-hidden="true"></i>
+                        Đại lý</a></li>
+                    <li><a data-toggle="tab" href="#menu6"><i class="fa fa-bell-o" aria-hidden="true"></i>
+                        Thông báo</a></li>
+                    <li><a data-toggle="tab" href="#menu7"><i class="fa fa-user-o" aria-hidden="true"></i>
+                        Quản lý tài khoản</a></li>
+                    <li><a id="li-sign-out"><i class="fa fa-sign-out" aria-hidden="true"></i>Đăng xuất</a></li>
+                </ul>
+            </div>
+
+            <div class="tab-content col-md-9">      <!-- Tab content -->
+                <div id="menu1" class="tab-pane fade in active">
+                    <div class="row">
+                        <div class="col-md-4 three-div">
+                            <div class="div-teaching">
+                                <div class="col-md-12 div-first">
+                                    <div class="float-left">
+                                        <h6>55</h6>
+                                        <p>Khoá học</p>
+                                    </div>
+                                    <div class="float-right">
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="clear-both"></div>
+                                </div>
+                                <div class="col-md-12 div-secon">
+                                    <p>Đang giảng dạy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 three-div">
+                            <div class="div-revenue-course1">
+                                <div class="col-md-12 div-first">
+                                    <p>Hôm nay &emsp;:&emsp;<span>16.000.000đ</span></p>
+                                    <p>Tuần này &emsp;:&emsp;<span>46.000.000đ</span></p>
+                                    <p>Tháng này &ensp;:&emsp;<span>161.000.000đ</span></p>
+                                </div>
+                                <div class="col-md-12 div-secon">
+                                    <p>Doanh thu khóa học</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 three-div">
+                            <div class="div-revenue-course2">
+                                <div class="col-md-12 div-first">
+                                    <p>Hôm nay &emsp;:&emsp;<span>16.000.000đ</span></p>
+                                    <p>Tuần này &emsp;:&emsp;<span>46.000.000đ</span></p>
+                                    <p>Tháng này &ensp;:&emsp;<span>161.000.000đ</span></p>
+                                </div>
+                                <div class="col-md-12 div-secon">
+                                    <p>Doanh thu giới thiệu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 comment-about-course">
+                        <h6>Bình luận về khóa học</h6>
+                        <p class="no-comment text-center">Chưa có bình luận nào</p>
+                        <ul>
+                            <li>
+                                <div class="img-comment">
+                                    <img src="img/body/valedic.jpg"/>
+                                </div>
+                                <div class="text-comment">
+                                    <div class="first-commnent number-comment">
+                                        <p>
+                                            <span class="user-comment">Nguyễn Phước Huynh - </span>
+                                            <span class="name-course"><a href="the-course.html#the-discuss1">PEN - C Toán</a></span>
+                                        </p>
+                                        <span class="content-comment ">
+                                            Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                        </span>
+                                        <p class="time-date">10:25 - 26 tháng 9, 2017</p>
+                                        <div class="secon-commnent number-comment">
+                                            <p>
+                                                <span class="user-comment">Nguyễn Phước Huynh - </span>
+                                                <span class="name-course"><a href="the-course.html#the-discuss1">PEN - C Toán</a></span>
+                                            </p>
+                                            <span class="content-comment">
+                                            Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                        </span>
+                                            <p class="time-date">10:25 - 26 tháng 9, 2017</p>
+                                        </div>
+                                        <div class="secon-commnent number-comment">
+                                            <p>
+                                                <span class="user-comment">Nguyễn Phước Huynh - </span>
+                                                <span class="name-course"><a href="the-course.html#the-discuss1">PEN - C Toán</a></span>
+                                            </p>
+                                            <span class="content-comment">
+                                            Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                        </span>
+                                            <p class="time-date">10:25 - 26 tháng 9, 2017</p>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn-get-textarea">Trả lời</button>
+                                    <textarea class="textarea-answer"></textarea>
+                                    <button class="btn-answer">Trả lời</button>
+                                </div>
+                                <div class="clear-both"></div>
+                            </li>
+                            <li>
+                                <div class="img-comment">
+                                    <img src="img/body/valedic.jpg"/>
+                                </div>
+                                <div class="text-comment">
+                                    <div class="first-commnent number-comment">
+                                        <p>
+                                            <span class="user-comment">Nguyễn Phước Huynh - </span>
+                                            <span class="name-course"><a href="the-course.html#the-discuss1">PEN - C Toán</a></span>
+                                        </p>
+                                        <span class="content-comment ">
+                                            Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                        </span>
+                                        <p class="time-date">10:25 - 26 tháng 9, 2017</p>
+                                    </div>
+
+                                    <button class="btn-get-textarea">Trả lời</button>
+                                    <textarea class="textarea-answer"></textarea>
+                                    <button class="btn-answer">Trả lời</button>
+                                </div>
+                                <div class="clear-both"></div>
+                            </li>
+                            <li>
+                                <div class="img-comment">
+                                    <img src="img/body/valedic.jpg"/>
+                                </div>
+                                <div class="text-comment">
+                                    <div class="first-commnent number-comment">
+                                        <p>
+                                            <span class="user-comment">Nguyễn Phước Huynh - </span>
+                                            <span class="name-course"><a href="the-course.html#the-discuss1">PEN - C Toán</a></span>
+                                        </p>
+                                        <span class="content-comment ">
+                                            Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                        </span>
+                                        <p class="time-date">10:25 - 26 tháng 9, 2017</p>
+                                    </div>
+
+                                    <button class="btn-get-textarea">Trả lời</button>
+                                    <textarea class="textarea-answer"></textarea>
+                                    <button class="btn-answer">Trả lời</button>
+                                </div>
+                                <div class="clear-both"></div>
+                            </li>
+                            <li>
+                                <div class="img-comment">
+                                    <img src="img/body/valedic.jpg"/>
+                                </div>
+                                <div class="text-comment">
+                                    <div class="first-commnent number-comment">
+                                        <p>
+                                            <span class="user-comment">Nguyễn Phước Huynh - </span>
+                                            <span class="name-course"><a href="the-course.html#the-discuss1">PEN - C Toán</a></span>
+                                        </p>
+                                        <span class="content-comment ">
+                                            Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                        </span>
+                                        <p class="time-date">10:25 - 26 tháng 9, 2017</p>
+                                    </div>
+
+                                    <button class="btn-get-textarea">Trả lời</button>
+                                    <textarea class="textarea-answer"></textarea>
+                                    <button class="btn-answer">Trả lời</button>
+                                </div>
+                                <div class="clear-both"></div>
+                            </li>
+                            <li>
+                                <div class="img-comment">
+                                    <img src="img/body/valedic.jpg"/>
+                                </div>
+                                <div class="text-comment">
+                                    <div class="first-commnent number-comment">
+                                        <p>
+                                            <span class="user-comment">Nguyễn Phước Huynh - </span>
+                                            <span class="name-course"><a href="the-course.html#the-discuss1">PEN - C Toán</a></span>
+                                        </p>
+                                        <span class="content-comment ">
+                                            Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                        </span>
+                                        <p class="time-date">10:25 - 26 tháng 9, 2017</p>
+                                    </div>
+
+                                    <button class="btn-get-textarea">Trả lời</button>
+                                    <textarea class="textarea-answer"></textarea>
+                                    <button class="btn-answer">Trả lời</button>
+                                </div>
+                                <div class="clear-both"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="menu2" class="tab-pane fade">
+                    <h5>Khóa học đang bán</h5>
+                    <p class="no-course">Chưa có khóa học nào</p>
+                    <table border="1">
+                        <tr>
+                            <th class="text-leftt">
+                                Tên khóa học
+                            </th>
+                            <th class="text-center">
+                                Học viên
+                            </th>
+                            <th class="text-center">
+                                Giá bán
+                            </th>
+                            <th>
+                                Chiết khấu
+                            </th>
+                            <th class="text-center">
+                                Tổng doanh thu
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-name-source">
+                                Luyện thi vào 10 Cthuyên Toán CT2 ào 10 Cthuyên Toán ào 10 Cthuyên Toán
+                            </td>
+                            <td>
+                                1250
+                            </td>
+                            <td class="robo-bold color-orange">
+                                3.500.000đ
+                            </td>
+                            <td class="robo-bold color-blue">
+                                5%
+                            </td>
+                            <td class="robo-bold color-orange">
+                                13.500.500đ
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="row text-center pagi-list-subject">
+                        <div class="pagination">
+                            <a href="#">1</a>
+                            <a href="#" class="active">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="menu3" class="tab-pane fade">
+                    <h5>Học viên đã mua khóa học</h5>
+                    <table border="1">
+                        <tr>
+                            <th>
+                                Tên học viên
+                            </th>
+                            <th>
+                                Ngày
+                            </th>
+                            <th>
+                                Khóa học
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="td-student">
+                                <div class="div-img">
+                                    <img src="img/body/valedic.jpg"/>
+                                </div>
+                                <div class="div-text">
+                                    Nguyễn Văn Chiến
+                                </div>
+                                <div class="clear-both"></div>
+                            </td>
+                            <td>
+                                12:25 - 26/09/2017
+                            </td>
+                            <td>
+                                Luyện thi THPT quốc gia PEN-C môn Vật lí
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-student">
+                                <div class="div-img">
+                                    <img src="img/body/valedic.jpg"/>
+                                </div>
+                                <div class="div-text">
+                                    Nguyễn Văn Chiến
+                                </div>
+                                <div class="clear-both"></div>
+                            </td>
+                            <td>
+                                12:25 - 26/09/2017
+                            </td>
+                            <td>
+                                Phương pháp phân tích đa thức thành nhân tử
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-student">
+                                <div class="div-img">
+                                    <img src="img/body/valedic.jpg"/>
+                                </div>
+                                <div class="div-text">
+                                    Nguyễn Văn Chiến
+                                </div>
+                                <div class="clear-both"></div>
+                            </td>
+                            <td>
+                                12:25 - 26/09/2017
+                            </td>
+                            <td>
+                                Phương pháp phân tích đa thức thành nhân tử
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-student">
+                                <div class="div-img">
+                                    <img src="img/body/valedic.jpg"/>
+                                </div>
+                                <div class="div-text">
+                                    Nguyễn Văn Chiến
+                                </div>
+                                <div class="clear-both"></div>
+                            </td>
+                            <td>
+                                12:25 - 26/09/2017
+                            </td>
+                            <td>
+                                Phương pháp phân tích đa thức thành nhân tử
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-student">
+                                <div class="div-img">
+                                    <img src="img/body/valedic.jpg"/>
+                                </div>
+                                <div class="div-text">
+                                    Nguyễn Văn Chiến
+                                </div>
+                                <div class="clear-both"></div>
+                            </td>
+                            <td>
+                                12:25 - 26/09/2017
+                            </td>
+                            <td>
+                                Phương pháp phân tích đa thức thành nhân tử
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-student">
+                                <div class="div-img">
+                                    <img src="img/body/valedic.jpg"/>
+                                </div>
+                                <div class="div-text">
+                                    Nguyễn Văn Chiến
+                                </div>
+                                <div class="clear-both"></div>
+                            </td>
+                            <td>
+                                12:25 - 26/09/2017
+                            </td>
+                            <td>
+                                Luyện thi THPT quốc gia PEN-C môn Vật lí
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-student">
+                                <div class="div-img">
+                                    <img src="img/body/valedic.jpg"/>
+                                </div>
+                                <div class="div-text">
+                                    Nguyễn Văn Chiến
+                                </div>
+                                <div class="clear-both"></div>
+                            </td>
+                            <td>
+                                12:25 - 26/09/2017
+                            </td>
+                            <td>
+                                Phương pháp phân tích đa thức thành nhân tử
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-student">
+                                <div class="div-img">
+                                    <img src="img/body/valedic.jpg"/>
+                                </div>
+                                <div class="div-text">
+                                    Nguyễn Văn Chiến
+                                </div>
+                                <div class="clear-both"></div>
+                            </td>
+                            <td>
+                                12:25 - 26/09/2017
+                            </td>
+                            <td>
+                                Phương pháp phân tích đa thức thành nhân tử
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-student">
+                                <div class="div-img">
+                                    <img src="img/body/valedic.jpg"/>
+                                </div>
+                                <div class="div-text">
+                                    Nguyễn Văn Chiến
+                                </div>
+                                <div class="clear-both"></div>
+                            </td>
+                            <td>
+                                12:25 - 26/09/2017
+                            </td>
+                            <td>
+                                Phương pháp phân tích đa thức thành nhân tử
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-student">
+                                <div class="div-img">
+                                    <img src="img/body/valedic.jpg"/>
+                                </div>
+                                <div class="div-text">
+                                    Nguyễn Văn Chiến
+                                </div>
+                                <div class="clear-both"></div>
+                            </td>
+                            <td>
+                                12:25 - 26/09/2017
+                            </td>
+                            <td>
+                                Phương pháp phân tích đa thức thành nhân tử
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="row text-center pagi-list-subject">
+                        <div class="pagination">
+                            <a href="#">1</a>
+                            <a href="#" class="active">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="menu4" class="tab-pane fade">
+                    <h5>Bình luận về khóa học</h5>
+                    <p class="no-comment text-center">Chưa có bình luận nào</p>
+                    <ul>
+                        <li>
+                            <div class="img-comment">
+                                <img src="img/body/valedic.jpg"/>
+                            </div>
+                            <div class="text-comment">
+                                <div class="first-commnent">
+                                    <p>
+                                        <span class="user-comment">Nguyễn Phước Huynh - </span>
+                                        <span class="name-course"><a href="the-course.html#the-discuss1">PEN - C Toán</a></span>
+                                    </p>
+                                    <span class="content-comment">
+                                            Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                        </span>
+                                    <p class="time-date">10:25 - 26 tháng 9, 2017</p>
+                                </div>
+
+                                <button class="btn-get-textarea">Trả lời</button>
+                                <textarea class="textarea-answer form-control"></textarea>
+                                <button class="btn-answer">Trả lời</button>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+
+                        <li>
+                            <div class="img-comment">
+                                <img src="img/body/valedic.jpg"/>
+                            </div>
+                            <div class="text-comment">
+                                <div class="first-commnent">
+                                    <p>
+                                        <span class="user-comment">Nguyễn Phước Huynh - </span>
+                                        <span class="name-course"><a href="the-course.html#the-discuss1">PEN - C Toán</a></span>
+                                    </p>
+                                    <span class="content-comment">
+                                            Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                        </span>
+                                    <p class="time-date">10:25 - 26 tháng 9, 2017</p>
+                                </div>
+
+                                <button class="btn-get-textarea">Trả lời</button>
+                                <textarea class="textarea-answer form-control"></textarea>
+                                <button class="btn-answer">Trả lời</button>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="img-comment">
+                                <img src="img/body/valedic.jpg"/>
+                            </div>
+                            <div class="text-comment">
+                                <div class="first-commnent">
+                                    <p>
+                                        <span class="user-comment">Nguyễn Phước Huynh - </span>
+                                        <span class="name-course"><a href="the-course.html#the-discuss1">PEN - C Toán</a></span>
+                                    </p>
+                                    <span class="content-comment">
+                                            Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                        </span>
+                                    <p class="time-date">10:25 - 26 tháng 9, 2017</p>
+                                </div>
+
+                                <button class="btn-get-textarea">Trả lời</button>
+                                <textarea class="textarea-answer form-control"></textarea>
+                                <button class="btn-answer">Trả lời</button>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="img-comment">
+                                <img src="img/body/valedic.jpg"/>
+                            </div>
+                            <div class="text-comment">
+                                <div class="first-commnent">
+                                    <p>
+                                        <span class="user-comment">Nguyễn Phước Huynh - </span>
+                                        <span class="name-course"><a href="the-course.html#the-discuss1">PEN - C Toán</a></span>
+                                    </p>
+                                    <span class="content-comment">
+                                            Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                        </span>
+                                    <p class="time-date">10:25 - 26 tháng 9, 2017</p>
+                                </div>
+
+                                <button class="btn-get-textarea">Trả lời</button>
+                                <textarea class="textarea-answer form-control"></textarea>
+                                <button class="btn-answer">Trả lời</button>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="img-comment">
+                                <img src="img/body/valedic.jpg"/>
+                            </div>
+                            <div class="text-comment">
+                                <div class="first-commnent">
+                                    <p>
+                                        <span class="user-comment">Nguyễn Phước Huynh - </span>
+                                        <span class="name-course"><a href="the-course.html#the-discuss1">PEN - C Toán</a></span>
+                                    </p>
+                                    <span class="content-comment">
+                                            Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                        </span>
+                                    <p class="time-date">10:25 - 26 tháng 9, 2017</p>
+                                </div>
+
+                                <button class="btn-get-textarea">Trả lời</button>
+                                <textarea class="textarea-answer form-control"></textarea>
+                                <button class="btn-answer">Trả lời</button>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="img-comment">
+                                <img src="img/body/valedic.jpg"/>
+                            </div>
+                            <div class="text-comment">
+                                <div class="first-commnent">
+                                    <p>
+                                        <span class="user-comment">Nguyễn Phước Huynh - </span>
+                                        <span class="name-course"><a href="the-course.html#the-discuss1">PEN - C Toán</a></span>
+                                    </p>
+                                    <span class="content-comment">
+                                            Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                        </span>
+                                    <p class="time-date">10:25 - 26 tháng 9, 2017</p>
+                                </div>
+
+                                <button class="btn-get-textarea">Trả lời</button>
+                                <textarea class="textarea-answer form-control"></textarea>
+                                <button class="btn-answer">Trả lời</button>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="img-comment">
+                                <img src="img/body/valedic.jpg"/>
+                            </div>
+                            <div class="text-comment">
+                                <div class="first-commnent">
+                                    <p>
+                                        <span class="user-comment">Nguyễn Phước Huynh - </span>
+                                        <span class="name-course"><a href="the-course.html#the-discuss1">PEN - C Toán</a></span>
+                                    </p>
+                                    <span class="content-comment">
+                                            Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                        </span>
+                                    <p class="time-date">10:25 - 26 tháng 9, 2017</p>
+                                </div>
+
+                                <button class="btn-get-textarea">Trả lời</button>
+                                <textarea class="textarea-answer form-control"></textarea>
+                                <button class="btn-answer">Trả lời</button>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+
+                    </ul>
+                    <div class="row text-center pagi-list-subject">
+                        <div class="pagination">
+                            <a href="#">1</a>
+                            <a href="#" class="active">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="menu5" class="tab-pane fade">
+                    <div class="row first-row">
+                        <div class="col-md-4">
+                            <div class="col-md-12 bgc-blue bgc-color">
+                                <p>12.568</p>
+                                <span>Khách truy cập</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="col-md-12 bgc-orange bgc-color">
+                                <p>15.200.000đ</p>
+                                <span>Thu nhập hiện tại</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="col-md-12 bgc-green bgc-color">
+                                <p>3.5%</p>
+                                <span>Tỷ lệ bán hàng</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="secon-row row">
+                        <div class="col-md-12 tab menu-sub-tab">
+                            <ul>
+                                <li class="active float-left"><a data-toggle="tab" href="#menu-sub-tab1">Thống kê</a></li>
+                                <li class="float-left"><a data-toggle="tab" href="#menu-sub-tab2">Marketing</a></li>
+                                <li class="float-right input-group">
+                                    <input type="text" class="form-control" id="search-tab-menu-sub" placeholder="Search" >
+                                    <span class="input-group-addon">
+                                        <button type="submit" class="fa fa-search">
+                                        </button>
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="clear-both"></div>
+                        </div>
+                        <div class="col-md-12 tab-content">
+                            <div id="menu-sub-tab1" class="tab-pane fade in active">
+                                <table border="1">
+                                    <tr>
+                                        <th>
+                                            Ngày
+                                        </th>
+                                        <th>
+                                            Link nguồn
+                                        </th>
+                                        <th>
+                                            Số click
+                                        </th>
+                                        <th>
+                                            Đơn hàng thành công
+                                        </th>
+                                        <th>
+                                            Hoa hồng
+                                        </th>
+                                        <th>
+                                            Doanh thu
+                                        </th>
+                                    </tr>
+                                    <tbody id="myTable">
+                                        <tr>
+                                            <td class="text-center">
+                                                20/11/2017
+                                            </td>
+                                            <td class="show-modal">
+                                                <a>
+                                                    https://www.facebook.com/thanhhoai99/
+                                                    906276869522003
+                                                </a>
+                                            </td>
+                                            <td>
+                                                1200
+                                            </td>
+                                            <td class="robo-bold color-blue text-center">
+                                                23
+                                            </td>
+                                            <td class="text-center">
+                                                10%
+                                            </td>
+                                            <td class="robo-bold color-orange text-center">
+                                                15.000.00đ
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">
+                                                02/11/2017
+                                            </td>
+                                            <td class="show-modal">
+                                                <a>
+                                                    https://www.facebook.com/thanhhoai99/
+                                                    906276869522003
+                                                </a>
+                                            </td>
+                                            <td>
+                                                1100
+                                            </td>
+                                            <td class="robo-bold color-blue text-center">
+                                                24
+                                            </td>
+                                            <td class="text-center">
+                                                13%
+                                            </td>
+                                            <td class="robo-bold color-orange text-center">
+                                                15.000.00đ
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">
+                                                02/11/2017
+                                            </td>
+                                            <td class="show-modal">
+                                                <a>
+                                                    https://www.facebook.com/thanhhoai99/
+                                                    906276869522003
+                                                </a>
+                                            </td>
+                                            <td>
+                                                1100
+                                            </td>
+                                            <td class="robo-bold color-blue text-center">
+                                                20
+                                            </td>
+                                            <td class="text-center">
+                                                13%
+                                            </td>
+                                            <td class="robo-bold color-orange text-center">
+                                                15.000.00đ
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">
+                                                20/11/2017
+                                            </td>
+                                            <td class="show-modal">
+                                                <a>
+                                                    https://www.facebook.com/thanhhoai99/
+                                                    906276869522003
+                                                </a>
+                                            </td>
+                                            <td>
+                                                1200
+                                            </td>
+                                            <td class="robo-bold color-blue text-center">
+                                                25
+                                            </td>
+                                            <td class="text-center">
+                                                10%
+                                            </td>
+                                            <td class="robo-bold color-orange text-center">
+                                                15.000.00đ
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">
+                                                02/11/2017
+                                            </td>
+                                            <td class="show-modal">
+                                                <a>
+                                                    https://www.facebook.com/thanhhoai99/
+                                                    906276869522003
+                                                </a>
+                                            </td>
+                                            <td>
+                                                1100
+                                            </td>
+                                            <td class="robo-bold color-blue text-center">
+                                                20
+                                            </td>
+                                            <td class="text-center">
+                                                13%
+                                            </td>
+                                            <td class="robo-bold color-orange text-center">
+                                                15.000.00đ
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">
+                                                02/11/2017
+                                            </td>
+                                            <td class="show-modal">
+                                                <a>
+                                                    https://www.facebook.com/thanhhoai99/
+                                                    906276869522003
+                                                </a>
+                                            </td>
+                                            <td>
+                                                1100
+                                            </td>
+                                            <td class="robo-bold color-blue text-center">
+                                                20
+                                            </td>
+                                            <td class="text-center">
+                                                13%
+                                            </td>
+                                            <td class="robo-bold color-orange text-center">
+                                                15.000.00đ
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">
+                                                20/11/2017
+                                            </td>
+                                            <td class="show-modal">
+                                                <a>
+                                                    https://www.facebook.com/thanhhoai99/
+                                                    906276869522003
+                                                </a>
+                                            </td>
+                                            <td>
+                                                1200
+                                            </td>
+                                            <td class="robo-bold color-blue text-center">
+                                                25
+                                            </td>
+                                            <td class="text-center">
+                                                10%
+                                            </td>
+                                            <td class="robo-bold color-orange text-center">
+                                                15.000.00đ
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">
+                                                02/11/2017
+                                            </td>
+                                            <td class="show-modal">
+                                                <a>
+                                                    https://www.facebook.com/thanhhoai99/
+                                                    906276869522003
+                                                </a>
+                                            </td>
+                                            <td>
+                                                1100
+                                            </td>
+                                            <td class="robo-bold color-blue text-center">
+                                                20
+                                            </td>
+                                            <td class="text-center">
+                                                13%
+                                            </td>
+                                            <td class="robo-bold color-orange text-center">
+                                                15.000.00đ
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">
+                                                02/11/2017
+                                            </td>
+                                            <td class="show-modal">
+                                                <a>
+                                                    https://www.facebook.com/thanhhoai99/
+                                                    906276869522003
+                                                </a>
+                                            </td>
+                                            <td>
+                                                1100
+                                            </td>
+                                            <td class="robo-bold color-blue text-center">
+                                                20
+                                            </td>
+                                            <td class="text-center">
+                                                13%
+                                            </td>
+                                            <td class="robo-bold color-orange text-center">
+                                                15.000.00đ
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">
+                                                02/11/2017
+                                            </td>
+                                            <td class="show-modal">
+                                                <a>
+                                                    https://www.facebook.com/thanhhoai99/
+                                                    906276869522003
+                                                </a>
+                                            </td>
+                                            <td>
+                                                1100
+                                            </td>
+                                            <td class="robo-bold color-blue text-center">
+                                                20
+                                            </td>
+                                            <td class="text-center">
+                                                13%
+                                            </td>
+                                            <td class="robo-bold color-orange text-center">
+                                                15.000.00đ
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-center pagi-list-subject">
+                                    <div class="pagination">
+                                        <a href="#">1</a>
+                                        <a href="#" class="active">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                    </div>
+                                </div>
+                                <div class="clear-both"></div>
+                            </div>
+
+                            <div id="menu-sub-tab2" class="tab-pane fade">
+                                <ul class="first-ul">
+                                    <li class="col-xs-12 robo-bold">
+                                        Link Affiliate của bạn
+                                    </li>
+                                    <li class="col-xs-12">
+                                        <a>http://www.hoccungthukhoa.vn/thukhoanguyenthihoai_2d4s2v6w8d6f3v5d8q9x</a>
+                                        <button class="btn btn-copy-link">Copy link</button>
+                                    </li>
+                                    <li class="col-xs-12">
+                                        <span class="robo-bold">Chia sẻ:</span>
+                                        <!--<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=small&mobile_iframe=true&width=69&height=20&appId" width="69" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>-->
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://dantri.com.vn//" class="btn social-button fa fa-facebook" target="_blank">
+                                            &ensp;Facebook</a>
+                                        <a href="https://plus.google.com/share?url=https://www.24h.com.vn/" class="btn social-button fa fa-google" target="_blank">
+                                            &ensp;Google</a>
+                                        <a href="#" class="btn social-button fa fa-twitter" target="_blank">
+                                            &ensp;Twitter</a>
+                                    </li>
+                                </ul>
+                                <div class="clear-both"></div>
+                                <p class="p-banner">Banner</p>
+                                <ul class="secon-ul">
+                                    <li>
+                                        <p class="p-tittle">Kích thước 300 x 250</p>
+                                        <div class="float-left text-center bgc-banner">
+                                            <p class="p-first">BANNER AD</p>
+                                            <p class="p-secon">300 x 250</p>
+                                            <a href="#">Preview</a>
+                                        </div>
+                                        <div class="float-left bgc-banner-content">
+                                            <div class="bgc-banner-content-1 bgc-content-sub">
+                                                <span>Mã nhúng</span>
+                                                <button class="btn btn-copy-link float-right">
+                                                    Copy link
+                                                </button>
+                                                <div class="clear-both"></div>
+                                            </div>
+                                            <textarea class="bgc-banner-content-2 bgc-content-sub">
+                                                "<a href='http://www.hoccungthukhoa.vn/thukhoanguyenvantoan_2d4s2v6w8d6f3v5d8q9x' target='_top'><img src='https://banners.hoccungthukhoa.vn/banners/banner-728x90.jpg' alt='Học cùng thủ khoa' title='Học cùng thủ khoa' width='300' height='250'></a>"
+                                            </textarea>
+                                            <div class="bgc-banner-content-3 bgc-content-sub">
+                                                <span class="robo-bold">Chia sẻ:</span>
+                                                <a href="https://www.facebook.com/sharer/sharer.php?u=http://dantri.com.vn//" class="btn social-button fa fa-facebook" target="_blank"></a>
+                                                <a href="https://plus.google.com/share?url=https://www.24h.com.vn/" class="btn social-button fa fa-google" target="_blank"></a>
+                                                <a href="#" class="btn social-button fa fa-twitter" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clear-both"></div>
+                                    </li>
+
+                                    <li>
+                                        <p class="p-tittle">Kích thước 300 x 250</p>
+                                        <div class="float-left text-center bgc-banner">
+                                            <p class="p-first">BANNER AD</p>
+                                            <p class="p-secon">300 x 250</p>
+                                            <a href="#">Preview</a>
+                                        </div>
+                                        <div class="float-left bgc-banner-content">
+                                            <div class="bgc-banner-content-1 bgc-content-sub">
+                                                <span>Mã nhúng</span>
+                                                <button class="btn btn-copy-link float-right">
+                                                    Copy link
+                                                </button>
+                                                <div class="clear-both"></div>
+                                            </div>
+                                            <textarea class="bgc-banner-content-2 bgc-content-sub">
+                                                "<a href='http://www.hoccungthukhoa.vn/thukhoanguyenvantoan_2d4s2v6w8d6f3v5d8q9x' target='_top'><img src='https://banners.hoccungthukhoa.vn/banners/banner-728x90.jpg' alt='Học cùng thủ khoa' title='Học cùng thủ khoa' width='300' height='250'></a>"
+                                            </textarea>
+                                            <div class="bgc-banner-content-3 bgc-content-sub">
+                                                <span class="robo-bold">Chia sẻ:</span>
+                                                <a href="https://www.facebook.com/sharer/sharer.php?u=http://dantri.com.vn//" class="btn social-button fa fa-facebook" target="_blank"></a>
+                                                <a href="https://plus.google.com/share?url=https://www.24h.com.vn/" class="btn social-button fa fa-google" target="_blank"></a>
+                                                <a href="#" class="btn social-button fa fa-twitter" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clear-both"></div>
+                                    </li>
+                                    <li>
+                                        <p class="p-tittle">Kích thước 300 x 250</p>
+                                        <div class="float-left text-center bgc-banner">
+                                            <p class="p-first">BANNER AD</p>
+                                            <p class="p-secon">300 x 250</p>
+                                            <a href="#">Preview</a>
+                                        </div>
+                                        <div class="float-left bgc-banner-content">
+                                            <div class="bgc-banner-content-1 bgc-content-sub">
+                                                <span>Mã nhúng</span>
+                                                <button class="btn btn-copy-link float-right">
+                                                    Copy link
+                                                </button>
+                                                <div class="clear-both"></div>
+                                            </div>
+                                            <textarea class="bgc-banner-content-2 bgc-content-sub">
+                                                <a href='http://www.hoccungthukhoa.vn/thukhoanguyenvantoan_2d4s2v6w8d6f3v5d8q9x' target='_top'><img src='https://banners.hoccungthukhoa.vn/banners/banner-728x90.jpg' alt='Học cùng thủ khoa' title='Học cùng thủ khoa' width='300' height='250'></a>
+                                            </textarea>
+                                            <div class="bgc-banner-content-3 bgc-content-sub">
+                                                <span class="robo-bold">Chia sẻ:</span>
+                                                <a href="https://www.facebook.com/sharer/sharer.php?u=http://dantri.com.vn//" class="btn social-button fa fa-facebook" target="_blank"></a>
+                                                <a href="https://plus.google.com/share?url=https://www.24h.com.vn/" class="btn social-button fa fa-google" target="_blank"></a>
+                                                <a href="#" class="btn social-button fa fa-twitter" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clear-both"></div>
+                                    </li>
+                                </ul>
+                                <div class="clear-both"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="menu6" class="tab-pane fade">
+                    <h5>thông báo</h5>
+                    <table border="1">
+                        <tr>
+                            <th>
+                                Ngày
+                            </th>
+                            <th>
+                                Thông báo
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của bạn
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của <a href="#">Trần Thu Trang</a> mà bạn đang theo dõi
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của bạn
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của <a href="#">Trần Thu Trang</a> mà bạn đang theo dõi
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của bạn
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của <a href="#">Trần Thu Trang</a> mà bạn đang theo dõi
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của bạn
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của <a href="#">Trần Thu Trang</a> mà bạn đang theo dõi
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của bạn
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của <a href="#">Trần Thu Trang</a> mà bạn đang theo dõi
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của bạn
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của <a href="#">Trần Thu Trang</a> mà bạn đang theo dõi
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của bạn
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của <a href="#">Trần Thu Trang</a> mà bạn đang theo dõi
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của bạn
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của <a href="#">Trần Thu Trang</a> mà bạn đang theo dõi
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của bạn
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của <a href="#">Trần Thu Trang</a> mà bạn đang theo dõi
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của bạn
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                09/07/2017
+                            </td>
+                            <td>
+                                <a href="#">Thủ khoa Nguyễn Phước Huy</a> đã trả lời bình luận của <a href="#">Trần Thu Trang</a> mà bạn đang theo dõi
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="row text-center pagi-list-subject">
+                        <div class="pagination">
+                            <a href="#">1</a>
+                            <a href="#" class="active">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="menu7" class="tab-pane fade">
+                    <h5>Quản lý tài khoản</h5>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form id="form1">   <!-- FORM UPLOAD AVATA -->
+                                <div class="img-upload">
+                                    <img id="up-avata" src="#" alt="your image" />
+                                </div>
+                                <label for="imgInp">Thay Avata</label>
+                                <input type='file' id="imgInp" placeholder="Thay Avata" style="display: none" />
+                            </form>     <!-- FORM UPLOAD AVATA -->
+                            <h6>Thay đổi thông tin cá nhân</h6>
+                            <form class="form2">
+                                <div class="form-group">
+                                    <label for="name">Họ và tên <span>*</span></label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email <span>*</span></label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Điện thoại</label>
+                                    <input type="text" class="form-control" id="phone">
+                                </div>
+                                <div class="form-group form-birthday">
+                                    <label for="phone">Ngày sinh</label>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <input class="form-control" type="number" min="1" max="31" step="1" placeholder="Ngày" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input class="form-control" type="number" min="1" max="12" step="1" placeholder="Tháng" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input class="form-control" type="number" min="1990" max="2010" step="1" placeholder="Năm" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group form-genre">
+                                    <label>Giới tính</label>
+                                    <div class="radio">
+                                        <label><input type="radio" name="genre">Nam</label>
+                                        <label><input type="radio" name="genre">Nữ</label>
+                                        <label><input type="radio" name="genre">Khác</label>
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Địa chỉ</label>
+                                    <input type="text" class="form-control" id="address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="timezone">Múi giờ hiện tại</label>
+                                    <select class="form-control" id="timezone">
+                                        <option value="" selected="selected">select your timezone</option>
+                                        <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+                                        <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+                                        <option value="-10:00">(GMT -10:00) Hawaii</option>
+                                        <option value="-09:50">(GMT -9:30) Taiohae</option>
+                                        <option value="-09:00">(GMT -9:00) Alaska</option>
+                                        <option value="-08:00">(GMT -8:00) Pacific Time (US & Canada)</option>
+                                        <option value="-07:00">(GMT -7:00) Mountain Time (US & Canada)</option>
+                                        <option value="-06:00">(GMT -6:00) Central Time (US & Canada), Mexico City</option>
+                                        <option value="-05:00">(GMT -5:00) Eastern Time (US & Canada), Bogota, Lima</option>
+                                        <option value="-04:50">(GMT -4:30) Caracas</option>
+                                        <option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+                                        <option value="-03:50">(GMT -3:30) Newfoundland</option>
+                                        <option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                                        <option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+                                        <option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
+                                        <option value="+00:00">(GMT +0:00) Western Europe Time, London, Lisbon, Casablanca</option>
+                                        <option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+                                        <option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
+                                        <option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                                        <option value="+03:50">(GMT +3:30) Tehran</option>
+                                        <option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                                        <option value="+04:50">(GMT +4:30) Kabul</option>
+                                        <option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                                        <option value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+                                        <option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+                                        <option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                                        <option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+                                        <option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                                        <option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                                        <option value="+08:75">(GMT +8:45) Eucla</option>
+                                        <option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                                        <option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+                                        <option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                                        <option value="+10:50">(GMT +10:30) Lord Howe Island</option>
+                                        <option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                                        <option value="+11:50">(GMT +11:30) Norfolk Island</option>
+                                        <option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+                                        <option value="+12:75">(GMT +12:45) Chatham Islands</option>
+                                        <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
+                                        <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label >Giới thiệu về bản thân</label>
+                                    <div id="summernote"></div>
+                                </div>
+                            </form>
+                            <button class="btn btn-update btn-update-info" id="update-info">Cập nhật</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 change-password">
+                            <h6>Thay đổi mật khẩu</h6>
+                            <input type="password" class="form-control" placeholder="Mật khẩu hiện tại">
+                            <input type="password" class="form-control" placeholder="Mật khẩu mới">
+                            <input type="password" class="form-control" placeholder="Nhập lại mật khẩu mới">
+                            <button class="btn btn-update btn-update-pass" id="update-pass">Cập nhật</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>      <!-- Tab content -->
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer-desktop">     <!-- FOOTER DESKTOP -->
+    <section class="first-footer">
+        <div class="container">
+            <div class="logo-sent-mail float-left">
+                <img src="img/logo/logo-mail.png" height="46" width="91"/>
+            </div>
+            <div class="text-decoration-mail float-left">
+                <span>để không bỏ lỡ thông tin hữu ích từ chúng tôi</span>
+                <p>Hãy đăng ký nhận e-mail</p>
+            </div>
+
+            <div class="input-group float-right" style="z-index: 0;">
+                <input class="form-control " placeholder="Nhập địa chỉ e-mail" type="email" name="email">
+                <div class="input-group-btn">
+                    <button class="btn btn-default btn-signup-email" type="submit">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secon-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <ul>
+                                <p>Hỗ trợ học sinh</p>
+                                <li><a href="#">Các câu hỏi thường gặp</a></li>
+                                <li><a href="#">Hướng dẫn thanh toán học phí</a></li>
+                                <li><a href="#">Chính sách hoàn học phí</a></li>
+                                <li><a href="#">Hotline: 0982 780 986</a></li>
+                                <li><a href="#">CSKH: 0982 780 986</a></li>
+                                <li><a href="#">Hỗ trợ:Từ 8h00 - 22h00 hàng ngày</a></li>
+                                <li><a href="#">Email: ìnfo@hoccungthukhoa.vn</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 ">
+                            <ul>
+                                <p>Giới thiệu</p>
+                                <li><a href="#">Giới thiệu học cùng thủ khoa</a></li>
+                                <li><a href="#">Danh sách khóa học</a></li>
+                                <li><a href="#">Điều khoản dịch vụ và chính sách bảo mật</a></li>
+                                <li><a href="list-new.html">Tin tức</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul>
+                                <p>Thanh toán an toàn</p>
+                                <li><a href="#">Thanh toán qua ngân hàng</a></li>
+                                <li><a href="#">Thanh toán qua thẻ điện thoại, Mclass</a></li>
+                                <li><a href="#">Thanh toán qua COD (thu tiền tận nơi)</a></li>
+                                <li><a href="#">Thanh toán bằng tiền mặt tại văn phòng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 div-btn-collab">
+                    <button class="btn btn-default btn-collaborate">
+                        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>&ensp;Hợp tác giảng dạy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>       <!-- FOOTER DESKTOP -->
+
+<footer class="footer-smart">
+    <section class="first-footer first-footer-smart">
+        <div class="container text-center">
+            <div class="logo-sent-mail float-left">
+                <img src="img/logo/logo-mail.png" class="img-responsive"/>
+            </div>
+            <div class="text-decoration-mail float-left">
+                <span>để không bỏ lỡ thông tin hữu ích từ chúng tôi</span>
+                <p>Hãy đăng ký nhận e-mail</p>
+            </div>
+
+            <div class="input-group" style="z-index: 0;">
+                <input class="form-control " placeholder="Nhập địa chỉ e-mail" type="email" name="email">
+                <div class="input-group-btn">
+                    <button class="btn btn-default btn-signup-email" type="submit">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secon-footer secon-footer-smart">
+        <div class="container text-center div-btn-collab">
+            <button class="btn btn-default btn-collaborate">
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>&ensp;Hợp tác giảng dạy
+            </button>
+        </div>
+        <!--<div class="clear-both"></div>-->
+        <div class="container support-smart">
+            <div class="row">
+                <div class="col-xs-5">
+                    <ul>
+                        <p>Hỗ trợ học sinh</p>
+                        <li><a href="#">Các câu hỏi thường gặp</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán học phí</a></li>
+                        <li><a href="#">Chính sách hoàn học phí</a></li>
+                        <li><a href="#">Hotline: 0982 780 986</a></li>
+                        <li><a href="#">CSKH: 0982 780 986</a></li>
+                        <li><a href="#">Hỗ trợ:Từ 8h00 - 22h00 hàng ngày</a></li>
+                        <li><a href="#">Email: ìnfo@hoccungthukhoa.vn</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-7">
+                    <ul>
+                        <p>Giới thiệu</p>
+                        <li><a href="#">Giới thiệu học cùng thủ khoa</a></li>
+                        <li><a href="#">Danh sách khóa học</a></li>
+                        <li><a href="#">Điều khoản dịch vụ và chính sách bảo mật</a></li>
+                        <li><a href="list-new.html">Tin tức</a></li>
+
+                    </ul>
+                    <ul>
+                        <p>Thanh toán an toàn</p>
+                        <li><a href="#">Thanh toán qua ngân hàng</a></li>
+                        <li><a href="#">Thanh toán qua thẻ điện thoại, Mclass</a></li>
+                        <li><a href="#">Thanh toán qua COD (thu tiền tận nơi)</a></li>
+                        <li><a href="#">Thanh toán bằng tiền mặt tại văn phòng</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="clear-both"></div>
+    </section>
+</footer>       <!-- FOOTER SMART -->
+</body>
+
+<script>
+
+</script>
+</html>

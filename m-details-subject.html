@@ -1,0 +1,2110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <title>M - Details Subject</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/slick/slick.css">
+    <script src="css/slick/slick.min.js"></script>
+    <script src="js/jschung.js"></script>
+    <script src="js/details-subject.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Title</title>
+
+</head>
+<noscript >
+    <div class="container">
+        <h2 >Xin lỗi trình duyệt của bạn không hỗ trợ javascript</h2>
+        <p>Xin vui lòng cập nhật hoặc tải về 1 trong các trình duyệt dưới đây:  </p>
+        <p>link ==><a href="https://www.mozilla.org/vi/firefox/new/">MOZILLA FIREFOX</a></p>
+        <p>link ==><a href="https://www.google.com/intl/vi/chrome/browser/desktop/index.html">GOOGLE CHROME</a></p>
+        <p>link ==><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48126">EDGE FOR WIN 10</a></p>
+        <p>link ==><a href="https://www.microsoft.com/vi-vn/download/details.aspx?id=40902">IE 11 FOR WIN7</a></p>
+    </div>
+</noscript>
+<body>
+<div class="container alert-ie8">
+    <h2 >Xin lỗi trình duyệt của bạn không hỗ trợ javascript</h2>
+    <p>Xin vui lòng cập nhật hoặc tải về 1 trong các trình duyệt dưới đây:  </p>
+    <p>link ==><a href="https://www.mozilla.org/vi/firefox/new/">MOZILLA FIREFOX</a></p>
+    <p>link ==><a href="https://www.google.com/intl/vi/chrome/browser/desktop/index.html">GOOGLE CHROME</a></p>
+    <p>link ==><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48126">EDGE FOR WIN 10</a></p>
+    <p>link ==><a href="https://www.microsoft.com/vi-vn/download/details.aspx?id=40902">IE 11 FOR WIN7</a></p>
+</div>
+
+<header class="container-fluid">        <!-- HEADER -->
+    <div class="first-header row">      <!-- CONTACT -->
+        <div class="container">
+            <ul>
+                <li class="none-border">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <span class="text-upper">Hotline: </span>
+                    <span class="robo-bold">0982.117.702</span>
+                </li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Đội ngũ giảng viên</a></li>
+                <li class="none-border"><a href="#">Liên hệ</a></li>
+                <li class="float-right none-border header-signup"  >
+                    <button class="btn-header-signup" data-toggle="modal" data-target="#modalSignup">
+                        <i class="fa fa-user-plus" aria-hidden="true">&ensp;Đăng ký</i>
+                    </button>
+
+                </li>
+
+                <li class="float-right none-border header-signin">
+                    <button class="btn-header-signup" data-toggle="modal" data-target="#modalSignin">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>&ensp;Đăng nhập
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>       <!-- CONTACT -->
+    <nav class="second-header">     <!-- MENNU -->
+        <div class="container">
+            <div class="header-menu">       <!-- HEADER MENU -->
+                <div class="header-menu-item">
+                    <img src="img/logo/logo.png" height="40" width="123"/>
+                </div>
+                <div class="border-bottom home-icon-home header-menu-item">
+                    <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+                </div>
+                <div class="home-li-advanced header-menu-item">
+                    <a>Khóa học nâng cao&ensp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+
+                    <div class="container home-first-menu first-menu-advanced">     <!-- MENU ADVANCED -->
+                        <div class="first-menu-arrow-up"></div>
+                        <div class="row">
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-primary-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối tiểu học</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-junior-advanced-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối trung học cơ sở</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-advanced-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối trung học phổ thông</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+                            <ul class="ul-school">
+                                <li class="text-center">
+                                    <img src="img/logo/logo-menu.png" height="254" width="242"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>      <!-- MENU ADVANCED -->
+
+                <div class="home-li-basic header-menu-item">        <!-- MENU BASIC -->
+                    <a>Khóa học cơ bản&ensp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="container home-first-menu first-menu-basic">
+                        <div class="first-menu-arrow-up first-menu-basic-arrow-up"></div>
+                        <div class="row">
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-primary-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối tiểu học</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-junior-advanced-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối trung học cơ sở</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-advanced-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối trung học phổ thông</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+                            <ul class="ul-school">
+                                <li class="text-center">
+                                    <img src="img/logo/logo-menu.png" height="254" width="242"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>      <!-- MENU BASIC -->
+
+                <div class="float-right header-menu-item header-menu-cart">      <!-- HEADER_MENU_ITEM -->
+                    <div class="shopping-cart">
+                        <img src="img/logo/cart.png" height="18" width="18"/>
+                        <div class="number-shopping-cart">8</div>
+                        <div class="tooltip-shopping-cart">
+                            <p>Bạn có 2 khóa học trong giỏ hàng</p>
+                            <div class="div-line"></div>
+                            <ul>
+                                <li>
+                                    <div class="img-shopping-cart float-left">
+                                        <a href="#"><img src="img/logo/shoppingcard.jpg" /></a>
+                                    </div>
+                                    <div class="text-shopping-cart float-left">
+                                        <a href="#"><span>Bồi dưỡng Toán lớp 5 (2017-2018)</span></a>
+                                        <p><span>680.000</span>đ</p>
+                                    </div>
+                                    <div class="float-right"><i class="fa fa-trash" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="clear-both"></div>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li>
+                                    <div class="img-shopping-cart float-left">
+                                        <a href="#"><img src="img/logo/shoppingcard.jpg" /></a>
+                                    </div>
+                                    <div class="text-shopping-cart float-left">
+                                        <a href="#"><span>Ôn luyện Vật Lý lớp 6 (2017-2018)</span></a>
+                                        <p><span>680.000</span> đ</p>
+                                    </div>
+                                    <div class="float-right"><i class="fa fa-trash" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="clear-both"></div>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-default btn-see-cart float-left">
+                                Xem giỏ hàng
+                            </a>
+                            <a href="#" class="btn btn-default btn-paid-cart float-right">
+                                Thanh toán
+                            </a>
+                        </div>      <!-- tooltip-shopping-cart -->
+                    </div>      <!-- SHOPPPING CART -->
+                </div>      <!-- HEADER_MENU_ITEM -->
+
+                <div class="float-right li-input-search header-menu-item">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>      <!-- HEARDER MENU -->
+        </div>
+    </nav>      <!-- MENNU -->
+</header>       <!-- HEADER -->
+
+<header class="header-smart header-smart-ondest">        <!-- HEADER SMART -->
+    <nav class=" nav-smart">
+        <div class="container">
+            <span class="btn-nav-open-smart float-left">
+                ☰
+            </span>
+
+            <a href="m-index.html" class="logo-smart">
+                <img src="img/logo/logo-smart.png" height="40" width="123"/>
+            </a>
+            <div class="float-right user-smart float-left" data-toggle="modal" data-target="#modalLoginSmart">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+            </div>
+            <div class="float-right header-menu-item header-menu-cart header-menu-cart-smart">      <!-- HEADER_MENU_ITEM -->
+                <div class="shopping-cart">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <div class="number-shopping-cart">8</div>
+                    <div class="tooltip-shopping-cart">
+                        <p>Bạn có 2 khóa học trong giỏ hàng</p>
+                        <div class="div-line"></div>
+                        <ul>
+                            <li>
+                                <div class="img-shopping-cart float-left">
+                                    <a href="#"><img src="img/logo/shoppingcard.jpg" /></a>
+                                </div>
+                                <div class="text-shopping-cart float-left">
+                                    <a href="#"><span>Bồi dưỡng Toán lớp 5 (2017-2018)</span></a>
+                                    <p><span>680.000</span>đ</p>
+                                </div>
+                                <div class="float-right"><i class="fa fa-trash" aria-hidden="true"></i>
+                                </div>
+                                <div class="clear-both"></div>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <div class="img-shopping-cart float-left">
+                                    <a href="#"><img src="img/logo/shoppingcard.jpg" /></a>
+                                </div>
+                                <div class="text-shopping-cart float-left">
+                                    <a href="#"><span>Ôn luyện Vật Lý lớp 6 (2017-2018)</span></a>
+                                    <p><span>680.000</span> đ</p>
+                                </div>
+                                <div class="float-right"><i class="fa fa-trash" aria-hidden="true"></i>
+                                </div>
+                                <div class="clear-both"></div>
+                                <div class="div-line"></div>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-default btn-see-cart float-left">
+                            Xem giỏ hàng
+                        </a>
+                        <a href="#" class="btn btn-default btn-paid-cart float-right">
+                            Thanh toán
+                        </a>
+                    </div>      <!-- tooltip-shopping-cart -->
+                </div>      <!-- SHOPPPING CART -->
+            </div>      <!-- HEADER_MENU_ITEM -->
+        </div>
+    </nav>
+    <div class="home-menu-smart1">
+        <ul class="col-md-12 smart-ul1">
+            <li>
+                <form class="navbar-form-search form-search">
+                    <div class="div-form-search input-group">
+                        <input type="text" class="form-control search-query" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="clear-both"></div>
+            </li>
+            <li class="smart-li1">
+                <div class="tittle-smart-li1">
+                    <h5 class="float-left">Khoá học cơ bản</h5>
+                    <i class="fa fa-angle-right float-right" aria-hidden="true"></i>
+                    <div class="clear-both"></div>
+                    <div class="div-line"></div>
+                </div>
+                <ul class="smart-ul2">
+                    <li class="smart-li2">
+                        <div class="tittle-smart-li2">
+                            <img src="img/logo/logo-smart-th.png"/>
+                            <span>Khối tiểu học</span>
+                            <div class="circle-ar-up float-right">
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="circle-ar-down float-right">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="clear-both"></div>
+                            <div class="div-line"></div>
+                        </div>
+                        <ul class="smart-ul3">
+                            <li>
+                                <a class="" href="#">Lớp 1</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a href="#">Lớp 2</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 3</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 4</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 5</a>
+                                <div class="div-line"></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="smart-li2">
+                        <div class="tittle-smart-li2">
+                            <img src="img/logo/logo-smart-trunghoc.png"/>
+                            <span>Khối trung học cơ sở</span>
+                            <div class="circle-ar-up float-right">
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="circle-ar-down float-right">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="clear-both"></div>
+                            <div class="div-line"></div>
+                        </div>
+                        <ul class="smart-ul3">
+                            <li>
+                                <a class="" href="#">Lớp 6</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a href="#">Lớp 7</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 8</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 9</a>
+                                <div class="div-line"></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="smart-li2">
+                        <div class="tittle-smart-li2">
+                            <img src="img/logo/logo-smart-trunghoc.png" height="64" width="64"/>
+                            <span>Khối trung học phổ thông</span>
+                            <div class="circle-ar-up float-right">
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="circle-ar-down float-right">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="clear-both"></div>
+                            <div class="div-line"></div>
+                        </div>
+                        <ul class="smart-ul3">
+                            <li>
+                                <a class="" href="#">Lớp 10</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a href="#">Lớp 11</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 12</a>
+                                <div class="div-line"></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="smart-li1">
+                <div class="tittle-smart-li1">
+                    <h5 class="float-left">Khoá học nâng cao</h5>
+                    <i class="fa fa-angle-right float-right" aria-hidden="true"></i>
+                    <div class="clear-both"></div>
+                    <div class="div-line"></div>
+                </div>
+                <ul class="smart-ul2">
+                    <li class="smart-li2">
+                        <div class="tittle-smart-li2">
+                            <img src="img/logo/logo-smart-th.png"/>
+                            <span>Khối tiểu học</span>
+                            <div class="circle-ar-up float-right">
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="circle-ar-down float-right">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="clear-both"></div>
+                            <div class="div-line"></div>
+                        </div>
+                        <ul class="smart-ul3">
+                            <li>
+                                <a class="" href="#">Lớp 1</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a href="#">Lớp 2</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 3</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 4</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 5</a>
+                                <div class="div-line"></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="smart-li2">
+                        <div class="tittle-smart-li2">
+                            <img src="img/logo/logo-smart-trunghoc.png"/>
+                            <span>Khối trung học cơ sở</span>
+                            <div class="circle-ar-up float-right">
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="circle-ar-down float-right">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="clear-both"></div>
+                            <div class="div-line"></div>
+                        </div>
+                        <ul class="smart-ul3">
+                            <li>
+                                <a class="" href="#">Lớp 6</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a href="#">Lớp 7</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 8</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 9</a>
+                                <div class="div-line"></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="smart-li2">
+                        <div class="tittle-smart-li2">
+                            <img src="img/logo/logo-smart-trunghoc.png" height="64" width="64"/>
+                            <span>Khối trung học phổ thông</span>
+                            <div class="circle-ar-up float-right">
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="circle-ar-down float-right">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="clear-both"></div>
+                            <div class="div-line"></div>
+                        </div>
+                        <ul class="smart-ul3">
+                            <li>
+                                <a class="" href="#">Lớp 10</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a href="#">Lớp 11</a>
+                                <div class="div-line"></div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Lớp 12</a>
+                                <div class="div-line"></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="li-smart-contact li-smart-contact1">
+                <h5><a href="#">Giới thiệu</a></h5>
+                <div class="div-line"></div>
+            </li>
+            <li class="li-smart-contact">
+                <h5><a href="#">Đội ngũ giảng viên</a></h5>
+                <div class="div-line"></div>
+            </li>
+            <li class="li-smart-contact">
+                <h5><a href="#">Tin tức</a></h5>
+                <div class="div-line"></div>
+            </li>
+            <li class="li-smart-contact">
+                <h5><a href="#">Liên hệ</a></h5>
+            </li>
+
+        </ul>
+    </div>
+    <div class="bgc-opa-smart"></div>
+</header>
+
+<div class="modal fade" id="modalLoginSmart" role="dialog">     <!-- DANG KY  -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <ul class="menu-login-smart">       <!-- MENU SLIDE -->
+                    <li class="active float-left"><a class="" data-toggle="tab" href="#login-smart1">đăng nhập</a></li>
+                    <li class="float-right"><a class="" data-toggle="tab" href="#login-smart2">đăng ký</a></li>
+                </ul>      <!-- MENU Login -->
+            </div>
+
+            <div class="modal-body">        <!-- modal-body  -->
+                <div class="tab-content" >
+                    <div class="tab-pane fade in active" id="login-smart1">
+                        <input type="text" class="form-control" placeholder="Tên tài khoản">
+                        <input type="password" class="form-control" placeholder="Mật khẩu">
+                        <input type="checkbox" id="check-remember"> <label for="check-remember">Ghi nhớ đăng nhập</label>
+                        <button class="btn form-control btn-login-smart">đăng nhập</button>
+                        <a href="#" class="forgot-pass">Quên mật khẩu ?</a>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-google"></a>
+                    </div>
+                    <div class="tab-pane fade" id="login-smart2">
+                        <input type="text" class="form-control" placeholder="Tên đăng nhập">
+                        <input type="password" class="form-control" placeholder="Mật khẩu">
+                        <input type="password" class="form-control" placeholder="Xác nhận mật khẩu">
+                        <input type="checkbox" id="agree-condition">
+                        <label for="agree-condition">Tôi đồng ý với các <a href="#">điều khoản sử dụng</a></label>
+                        <button class="btn btn-signup-smart form-control">đăng ký</button>
+                        <p class="text-center">Đăng ký bằng tài khoản</p>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-google"></a>
+                    </div>
+                </div>
+            </div>      <!-- modal-body  -->
+            <div class="modal-footer">
+                <div class="phone-contact float-left login-contact-smart"><i class="fa fa-phone" aria-hidden="true"></i>
+                    (04) 3555 1913</div>
+                <div class="mail-contact float-right login-contact-smart"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    contact@hoccungthukhoa.vn</div>
+            </div>
+
+        </div>      <!--  modal-content  -->
+    </div>      <!--  modal-dialog  -->
+</div>
+
+<header class="header-scroll">
+
+</header>
+
+
+<!--  MODAL ĐĂNG NHẬP ĐĂNG KÝ-->
+<div class="modal fade" id="modalSignup" role="dialog">     <!-- DANG KY  -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Đăng ký tài khoản</h5>
+            </div>
+            <div class="modal-body">
+                <p class="text-center">Đăng ký tài khoản Học cùng thủ khoa để học ngay hôm nay</p>
+                <div class="div-input text-center">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="text" class="form-control" placeholder="Họ tên">
+                    <input type="password" class="form-control" placeholder="Mật khẩu">
+                    <input type="checkbox" class="checkbox"><label>Tôi đồng ý với các<span>&ensp;<a href="#">Điều khoản sử dụng</a></span></label>
+                    <button class="btn btn-defalt btn-modal-signin form-control"  data-dismiss="modal" data-toggle="modal" data-target="#modalCode">Tiếp theo <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-fot">
+                <div class="modal-contact">
+                    <div class="div-icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">(04) 3555 1938</a></span>
+                    <div class="div-icon secon-icon">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">contact@hoccungthukhoa.vn</a></span>
+                </div>
+            </div>
+        </div>      <!--  modal-content  -->
+    </div>      <!--  modal-dialog  -->
+</div>      <!--  modalSignup  -->
+
+<div class="modal fade" id="modalCode" role="dialog">     <!-- DANG KY  -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Đăng ký tài khoản</h5>
+            </div>
+            <div class="modal-body">
+                <p class="text-left">Bạn vui lòng nhập mã kích hoạt nhận được trong email đã đăng ký!</p>
+                <p>Sau 4 giờ nếu không kích hoạt, bạn phải đăng ký lại.</p>
+                <div class="div-input text-center">
+                    <input type="text" class="form-control" placeholder="Nhập mã kích hoạt">
+                    <p><a href="#">Bấm vào đây </a> nếu bạn chưa nhận được email kích hoạt.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="btn-defalt form-control btn-cancel" data-dismiss="modal">Hủy <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn-defalt btn-modal-code form-control" data-dismiss="modal" data-toggle="modal" data-target="#modalSuccess">Đăng ký <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-fot">
+                <div class="modal-contact">
+                    <div class="div-icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">(04) 3555 1938</a></span>
+                    <div class="div-icon secon-icon">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">contact@hoccungthukhoa.vn</a></span>
+                </div>
+            </div>
+        </div>      <!--  modal-content  -->
+    </div>      <!--  modal-dialog  -->
+</div>      <!--  modalSignup  -->
+
+<div class="modal fade" id="modalSuccess" role="dialog">     <!-- DANG KY  -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Đăng ký tài khoản</h5>
+            </div>
+            <div class="modal-body text-center">
+                <div class="logo-check "><img src="img/logo/check.png" height="60" width="60"/></div>
+                <p class="">Đăng ký thành công <br>
+                    tài khoản Học cùng thủ khoa.
+                </p>
+                <button class="btn btn-success-signup form-control" data-dismiss="modal">Hoàn tất</button>
+            </div>
+        </div>      <!--  modal-content  -->
+    </div>      <!--  modal-dialog  -->
+</div>      <!--  modalSuccess  -->
+
+<div class="modal fade" id="modalSignin" role="dialog">     <!-- DANG NHAP  -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Đăng nhập</h5>
+            </div>
+            <div class="modal-body">
+                <div class="div-logo-user text-center">
+                    <img src="img/logo/ava-login.png"/>
+                </div>
+                <div class="div-input text-center">
+                    <input type="text" class="form-control" placeholder="Tên tài khoản">
+                    <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+                    <button class="btn btn-defalt btn-modal-signin form-control">đăng nhập</button>
+                    <button class=" btn-modal-signup" data-dismiss="modal" data-toggle="modal" data-target="#modalSignup">Đăng ký tài khoản</button>
+                </div>
+                <div class="clear-both"></div>
+            </div>
+            <div class="modal-fot">
+                <div class="modal-contact">
+                    <div class="div-icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">(04) 3555 1938</a></span>
+                    <div class="div-icon secon-icon">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">contact@hoccungthukhoa.vn</a></span>
+                </div>
+            </div>
+        </div>      <!--  modal-content  -->
+    </div>      <!--  modal-dialog  -->
+</div>      <!--  modalSignin  -->
+
+<section class="tittle-list-sub tittle-details-sub tittle-details-sub-smart">
+    <div class="container ">
+        <h5>Luyện thi VIOLYMPIC Toán 5</h5>
+        <p>
+            Khóa học "Luyện thi Violympic Toán 5" - khóa học giúp học sinh rèn luyện phương pháp và kỹ năng cần thiết để
+            giải các dạng bài trong kỳ thi Violympic Toán
+        </p>
+    </div>
+</section>
+
+<section class="video-smart">
+    <div class="info-detail-sub info-detail-sub-smart col-md-12">
+        <div class="row">
+            <div class="img-video-detail-sub img-video-detail-sub-smart" data-id="video/Xperia_dogsea_FHD.mp4">
+                <div class="play-icon">
+                    <img src="img/logo/play-video.png" height="59" width="84"/>
+                </div>
+                <img src="img/body/img-video.jpg" class="img-responsive"/>
+                <div class="video-sub video-sub-smart">
+                    <video width="100%" height="auto"  controls class="video-sub-play">
+                        <source src="video/Xperia_dogsea_FHD.mp4" type="video/mp4">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </video>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="video-sub">
+                            <video width="100%" height="auto"  controls class="video-sub-play">
+                                <source src="video/Xperia_dogsea_FHD.mp4" type="video/mp4">
+                                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h5>Thông tin khóa học</h5>
+        <div class="div-line-info float-left"></div>
+        <div class="clear-both"></div>
+        <ul >
+            <li>
+                <span class="float-left"><i class="fa fa-play-circle" aria-hidden="true"></i>Bài giảng</span>
+                <span class="float-right">44 bài</span>
+                <div class="clear-both"></div>
+                <div class="div-line"></div>
+            </li>
+            <li>
+                <span class="float-left"><i class="fa fa-clock-o" aria-hidden="true"></i>Giờ học</span>
+                <span class="float-right">120 giờ</span>
+                <div class="clear-both"></div>
+                <div class="div-line"></div>
+            </li>
+            <li>
+                <span class="float-left"><i class="fa fa-suitcase" aria-hidden="true"></i>Môn học</span>
+                <span class="float-right"><a href="#">Toán</a></span>
+                <div class="clear-both"></div>
+                <div class="div-line"></div>
+            </li>
+            <li>
+                <span class="float-left"><i class="fa fa-folder-open" aria-hidden="true"></i>Trình độ</span>
+                <span class="float-right"><a href="#">Lớp 5</a></span>
+                <div class="clear-both"></div>
+                <div class="div-line"></div>
+            </li>
+            <li>
+                <span class="float-left"><i class="fa fa-users" aria-hidden="true"></i>Học viên đã đăng ký</span>
+                <span class="float-right">3.600</span>
+                <div class="clear-both"></div>
+                <div class="div-line"></div>
+            </li>
+        </ul>
+        <div class="clear-both"></div>
+        <!--<div class="text-center info-cost-detaoil-sub">-->
+            <!--<span class="real-cost">500.000đ</span>-->
+            <!--<span class="the-cost">1.000.000đ</span>-->
+        <!--</div>-->
+        <button class="btn btn-default btn-buy-sub">Đăng ký ngay</button>
+        <button class="btn btn-default btn-add-cart">Thêm vào giỏ</button>
+    </div>
+    <div class="clear-both"></div>
+</section>
+
+
+<section class="second-details-sub second-details-sub-smart">    <!--  SECTION DETAILS SUB -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-xs-12 content-detail-sub">       <!--  content-detail-sub  -->
+                <div class="descrep-detail-sub">
+                    <h5>Mô tả khóa học:</h5>
+                    <p class="descrep-detail-sub1">Khóa luyện thi ViOlympic gồm 3 phần</p>
+                    <ul class="first-ul">
+                        <li>Học và luyện chuyên sâu<span> với 70 dạng toán nâng cao xuất hiện trong các vòng thi Violympic.</span></li>
+                        <li>Luyện theo chủ đề:<span> Luyện mọi dạng bài tập với 110 chủ đề.</span></li>
+                        <li>Luyện theo vòng:<span> Luyện tất cả các vòng thi với 25 đề thi từ vòng trường đến vòng Quốc gia.</span></li>
+                    </ul>
+                    <p class="descrep-detail-sub2">Những đặc điểm nổi bật của khóa học</p>
+                    <ul>
+                        <li>Học 70 dạng toán nâng cao</li>
+                        <li>Luyện 110 chủ đề + 2500 câu hỏi bao quát toàn bộ các dạng toán thi VIO</li>
+                        <li>Hỏi đáp mọi thắc mắc trong quá trình học tập.</li>
+                    </ul>
+                </div>      <!--    descrep-detail-sub  -->
+
+                <div class="request-detail-sub">
+                    <h5>Các yêu cầu khóa học</h5>
+                    <ul>
+                        <li>Ghi lại thắc mắc trong quá trình học, làm bài để trao đổi dưới bài giảng.</li>
+                        <li>Tự giải các bài tập trong bài giảng trước khi theo dõi lời giải của giáo viên</li>
+                        <li>Tự giác làm bài tập tự luyện để trước hết là hiểu, nắm chắc kiến thức lí thuyết, và sau đó là vận dụng được phương pháp, kĩ năng giải quyết được các dạng bài nâng cao và mở rộng, đáp ứng nội dung của kì thi Violympic..</li>
+                    </ul>
+                </div>      <!--    request-detail-sub     -->
+
+                <div class="result-detail-sub">
+                    <h5>Kết quả học tập</h5>
+                    <ul>
+                        <li>Nhận diện được tất cả các dạng bài thi trong đề thi Toán Violympic lớp 5.</li>
+                        <li>Áp dụng được phương pháp làm bài vào các dạng bài cụ thể trong đề thi.</li>
+                        <li>Được rèn luyện tâm lí và các kỹ năng, phương pháp làm bài.</li>
+                    </ul>
+                </div>
+
+                <div class="review-detail-sub review-detail-sub-smart">
+                    <h5>Chi tiết khóa học</h5>
+                    <ul class="active">
+                        <div class="tittle-ul">
+                            <div class="float-left">
+                                <i class="fa fa-minus-square" aria-hidden="true"></i>
+                                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                <span>Phần 1. Học và Luyện chuyên sâu các dạng Toán nâng cao 1.</span>
+                            </div>
+                            <div class="float-right style-money active">
+                                <span>120.000đ</span>
+                                <a href="#" class="not-active">Đăng ký</a>
+                                <a href="#" class="active">Vào học</a>
+                            </div>
+                            <div class="clear-both"></div>
+                        </div>
+                        <li>
+                            <div class="float-left">
+                                <a href="#">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                    <span>Chủ đề 1. Lập số</span>
+                                </a>
+                                <span class="three-icon">
+                                    <span class="show-video" data-id="video/testvideo.mp4" data-toggle="modal" data-target="#myModal"><i class="fa fa-play" aria-hidden="true"></i> Xem trước</span>
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> 340 phút</span>
+                                    <span><i class="fa fa-eye" aria-hidden="true"></i> 2154</span>
+                                </span>
+                            </div>
+                            <div class="float-right style-money active">
+                                <span>Miễn phí</span>
+                                <a href="#" class="not-active">Đăng ký</a>
+                                <a href="#" class="active">Vào học</a>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left">
+                                <a href="#">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                    <span>Chủ đề 1. Lập số</span>
+                                </a>
+                                <span class="three-icon">
+                                    <span class="show-video" data-id="video/testvideo.mp4" data-toggle="modal" data-target="#myModal"><i class="fa fa-play" aria-hidden="true"></i> Xem trước</span>
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> 340 phút</span>
+                                    <span><i class="fa fa-eye" aria-hidden="true"></i> 2154</span>
+                                </span>
+                            </div>
+                            <div class="float-right style-money">
+                                <span>120.000đ</span>
+                                <a href="#" class="not-active">Đăng ký</a>
+                                <a href="#" class="active">Vào học</a>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left">
+                                <a href="#">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                    <span>Chủ đề 1. Lập số</span>
+                                </a>
+                                <span class="three-icon">
+                                    <span class="show-video" data-id="video/testvideo.mp4" data-toggle="modal" data-target="#myModal"><i class="fa fa-play" aria-hidden="true"></i> Xem trước</span>
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> 340 phút</span>
+                                    <span><i class="fa fa-eye" aria-hidden="true"></i> 2154</span>
+                                </span>
+                            </div>
+                            <div class="float-right style-money">
+                                <span>120.000đ</span>
+                                <a href="#" class="not-active">Đăng ký</a>
+                                <a href="#" class="active">Vào học</a>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                    </ul>
+                    <ul class="active">
+                        <div class="tittle-ul">
+                            <div class="float-left">
+                                <i class="fa fa-minus-square" aria-hidden="true"></i>
+                                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                <span>Phần 1. Học và Luyện chuyên sâu các dạng Toán nâng cao 1. Học và Luyện chuyên sâu các dạng Toán nâng cao</span>
+                            </div>
+                            <div class="float-right style-money active">
+                                <span>120.000đ</span>
+                                <a href="#" class="not-active">Đăng ký</a>
+                                <a href="#" class="active">Vào học</a>
+                            </div>
+                            <div class="clear-both"></div>
+                        </div>
+                        <li>
+                            <div class="float-left">
+                                <a href="#">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                    <span>Chủ đề 1. Lập số</span>
+                                </a>
+                                <span class="three-icon">
+                                    <span class="show-video" data-id="video/testvideo.mp4" data-toggle="modal" data-target="#myModal"><i class="fa fa-play" aria-hidden="true"></i> Xem trước</span>
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> 340 phút</span>
+                                    <span><i class="fa fa-eye" aria-hidden="true"></i> 2154</span>
+                                </span>
+                            </div>
+                            <div class="float-right active">
+                                <span>Miễn phí</span>
+                                <a href="#" class="not-active">Đăng ký</a>
+                                <a href="#" class="active">Vào học</a>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left">
+                                <a href="#">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                    <span>Chủ đề 1. Lập số</span>
+                                </a>
+                                <span class="three-icon">
+                                    <span class="show-video" data-id="video/Xperia_dogsea_FHD.mp4" data-toggle="modal" data-target="#myModal"><i class="fa fa-play" aria-hidden="true"></i> Xem trước</span>
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> 340 phút</span>
+                                    <span><i class="fa fa-eye" aria-hidden="true"></i> 2154</span>
+                                </span>
+                            </div>
+                            <div class="float-right">
+                                <span>120.000đ</span>
+                                <a href="#" class="not-active">Đăng ký</a>
+                                <a href="#" class="active">Vào học</a>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left">
+                                <a href="#">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                    <span>Chủ đề 1. Lập số</span>
+                                </a>
+                                <span class="three-icon">
+                                    <span class="show-video" data-id="video/testvideo.mp4" data-toggle="modal" data-target="#myModal"><i class="fa fa-play" aria-hidden="true"></i> Xem trước</span>
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> 340 phút</span>
+                                    <span><i class="fa fa-eye" aria-hidden="true"></i> 2154</span>
+                                </span>
+                            </div>
+                            <div class="float-right">
+                                <span>120.000đ</span>
+                                <a href="#" class="not-active">Đăng ký</a>
+                                <a href="#" class="active">Vào học</a>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                    </ul>
+                    <ul class="active">
+                        <div class="tittle-ul">
+                            <div class="float-left">
+                                <i class="fa fa-minus-square" aria-hidden="true"></i>
+                                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                <span>Phần 1. Học và Luyện chuyên sâu các dạng Toán nâng cao 1. Học và Luyện chuyên sâu các dạng Toán nâng cao</span>
+                            </div>
+                            <div class="float-right">
+                                <span>120.000đ</span>
+                                <a href="#" class="not-active">Đăng ký</a>
+                                <a href="#" class="active">Vào học</a>
+                            </div>
+                            <div class="clear-both"></div>
+                        </div>
+                        <li>
+                            <div class="float-left">
+                                <a href="#">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                    <span>Chủ đề 1. Lập số</span>
+                                </a>
+                                <span class="three-icon">
+                                    <span class="show-video" data-id="video/testvideo.mp4" data-toggle="modal" data-target="#myModal"><i class="fa fa-play" aria-hidden="true"></i> Xem trước</span>
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> 340 phút</span>
+                                    <span><i class="fa fa-eye" aria-hidden="true"></i> 2154</span>
+                                </span>
+                            </div>
+                            <div class="float-right active">
+                                <span>Miễn phí</span>
+                                <a href="#" class="not-active">Đăng ký</a>
+                                <a href="#" class="active">Vào học</a>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left">
+                                <a href="#">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                    <span>Chủ đề 1. Lập số</span>
+                                </a>
+                                <span class="three-icon">
+                                    <span class="show-video" data-id="video/testvideo.mp4" data-toggle="modal" data-target="#myModal"><i class="fa fa-play" aria-hidden="true"></i> Xem trước</span>
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> 340 phút</span>
+                                    <span><i class="fa fa-eye" aria-hidden="true"></i> 2154</span>
+                                </span>
+                            </div>
+                            <div class="float-right">
+                                <span>120.000đ</span>
+                                <a href="#" class="not-active">Đăng ký</a>
+                                <a href="#" class="active">Vào học</a>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                        <li>
+                            <div class="float-left">
+                                <a href="#">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                    <span>Chủ đề 1. Lập số</span>
+                                </a>
+                                <span class="three-icon">
+                                    <span class="show-video" data-id="video/testvideo.mp4" data-toggle="modal" data-target="#myModal"><i class="fa fa-play" aria-hidden="true"></i> Xem trước</span>
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> 340 phút</span>
+                                    <span><i class="fa fa-eye" aria-hidden="true"></i> 2154</span>
+                                </span>
+                            </div>
+                            <div class="float-right">
+                                <span>120.000đ</span>
+                                <a href="#" class="not-active">Đăng ký</a>
+                                <a href="#" class="active">Vào học</a>
+                            </div>
+                            <div class="clear-both"></div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="some-course some-course-smart">
+                    <div class="col-xs-12 col-md-12">
+                        <h5>
+                            Mua khóa học theo nhóm
+                        </h5>
+                        <div class="item-subject-smart item-subject-smart1">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv1-bgc.png) center no-repeat;">
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <a href="#"><p class="name-subject-slide name-subject-slide-some-course">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold span-some-course">680.000</span>đ</p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart item-subject-smart2">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv1-bgc.png) center no-repeat;">
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <a href="#"><p class="name-subject-slide name-subject-slide-some-course">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold span-some-course">680.000</span>đ</p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="text-center some-course-info">
+                            <span>Thành tiền: <span class="color-red"> 1.360.000</span>đ</span>
+                            <p><span class="color-red">1.000.000</span>đ</p>
+                            <button class="btn btn-buy-now" data-toggle="modal" data-target="#modalBuyCourse">Mua ngay</button>
+                        </div>
+                    </div>
+                    <div class="clear-both"></div>
+                </div>      <!-- some course -->
+
+                <div class="star-detail-sub">
+                    <h5>Đánh giá</h5>
+                    <div class="star-number float-left">        <!-- star-number  -->
+                        <span>3.3</span>
+                        <p class="total-star-sub ">
+                            <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                            <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </p>
+                    </div>      <!-- star-number  -->
+
+                    <div class="star-row float-right">      <!--   star-row -->
+                        <div class="row five-star number-star">     <!-- row five star -->
+                            <div class="col-md-12">
+                                <div class="float-left the-row">
+                                    <div class="full-div">
+                                        <div id="percent-div_1" class="percent-div"></div>
+                                    </div>
+                                </div>
+                                <div class="float-left the-star">
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>&emsp;
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>      <!-- row five star -->
+
+                        <div class="row four-star number-star">     <!-- row four star -->
+                            <div class="col-md-12">
+                                <div class="float-left the-row">
+                                    <div class="full-div">
+                                        <div id="percent-div_2" class="percent-div"></div>
+                                    </div>
+                                </div>
+                                <div class="float-left the-star">
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>&emsp;
+                                    <span>10%</span>
+                                </div>
+                            </div>
+
+                        </div>      <!-- row four star -->
+
+                        <div class="row three-star number-star">     <!-- row three star -->
+                            <div class="col-md-12">
+                                <div class="float-left the-row">
+                                    <div class="full-div">
+                                        <div id="percent-div_3" class="percent-div"></div>
+                                    </div>
+                                </div>
+                                <div class="float-left the-star">
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>&emsp;
+                                    <span>10%</span>
+                                </div>
+                            </div>
+                        </div>      <!-- row three star -->
+
+                        <div class="row two-star number-star number-star-4">     <!-- row two star -->
+                            <div class="col-md-12">
+                                <div class="float-left the-row">
+                                    <div class="full-div">
+                                        <div id="percent-div_4" class="percent-div"></div>
+                                    </div>
+                                </div>
+                                <div class="float-left the-star">
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>&emsp;
+                                    <span>20%</span>
+                                </div>
+                            </div>
+                        </div>      <!-- row two star -->
+
+                        <div class="row one-star number-star number-star-5">     <!-- row one star -->
+                            <div class="col-md-12">
+                                <div class="float-left the-row">
+                                    <div class="full-div">
+                                        <div id="percent-div_5" class="percent-div"></div>
+                                    </div>
+                                </div>
+                                <div class="float-left the-star">
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>&emsp;
+                                    <span>0%</span>
+                                </div>
+                            </div>
+                        </div>      <!-- row one star -->
+
+                    </div>      <!--   star-row -->
+                    <div class="clear-both"></div>
+                </div>      <!--    star-detail-sub    -->
+
+                <ul class="comment-detail-sub">
+                    <h5 id="href4">Bình luận</h5>
+                    <p>Địa chỉ email của bạn sẽ không được công khai</p>
+                    <input type="text" name="name" placeholder="Họ tên" class="float-left form-control input-name-comment">
+                    <input type="email" name="email" placeholder="Địa chỉ email" class="float-right form-control input-email-comment">
+                    <div class="clear-both"></div>
+                    <textarea name="comment" id="" placeholder="Bình luận"></textarea>
+                    <div class="your-review">
+                        <span class="your-review">Đánh giá của bạn:</span>
+                        <div class='rating-stars'>
+                            <ul class = 'stars'>
+                                <li class='star' title='Poor' data-value='1'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star' title='Fair' data-value='2'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star' title='Good' data-value='3'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star' title='Excellent' data-value='4'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star' title='WOW!!!' data-value='5'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-default btn-sent-comment float-right">Đăng</button>
+                    </div>
+                    <li class="some-comment">      <!-- Some comment -->
+                        <div class="float-left ava-user">
+                            <img src="img/logo/ava-user.png"/>
+                        </div>
+                        <div class="div-some-comment">
+                            <div class="some-comment-text float-right">
+                                <span class="name-user">Nguyễn Tuấn Tú</span> -
+                                <span class="time-date">10:25-26 tháng 9,2017</span>
+                                <div class='rating-stars float-right'>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                </div>
+                                <p>Khóa học này rất bổ ích, nhờ nó mà giờ kiến thức của em vững hơn nhiều,
+                                    đã theo kịp bài học trên lớp rồi. Cảm ơn chị rất nhiều.
+                                </p>
+                                <span class="comment-like active">
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                <span class="number-like">2</span><span> Thích</span>
+                            </span>
+                                <span class="comment-answer">
+                                <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                <span class="span-comment-answer">Trả lời</span>
+                            </span>
+                                <div class="secon-commnent number-comment">
+                                    <span class="name-user">Nguyễn Tuấn Tú</span> -
+                                    <span class="time-date">10:25-26 tháng 9,2017</span>
+                                    <p class="content-comment">
+                                        Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                    </p>
+                                </div>
+                            </div>
+                            <textarea class="textarea-answer"></textarea>
+                            <button class="btn btn-answer">Trả lời</button>
+                            <div class="clear-both"></div>
+                        </div>
+                    </li>      <!-- Some comment -->
+                    <li class="some-comment">      <!-- Some comment -->
+                        <div class="float-left ava-user">
+                            <img src="img/logo/ava-user.png"/>
+                        </div>
+                        <div class="div-some-comment">
+                            <div class="some-comment-text float-right">
+                                <span class="name-user">Nguyễn Tuấn Tú</span> -
+                                <span class="time-date">10:25-26 tháng 9,2017</span>
+                                <div class='rating-stars float-right'>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                </div>
+                                <p>Khóa học này rất bổ ích, nhờ nó mà giờ kiến thức của em vững hơn nhiều,
+                                    đã theo kịp bài học trên lớp rồi. Cảm ơn chị rất nhiều.
+                                </p>
+                                <span class="comment-like active">
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                <span class="number-like">2</span><span> Thích</span>
+                            </span>
+                                <span class="comment-answer">
+                                <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                <span class="span-comment-answer">Trả lời</span>
+                            </span>
+                                <div class="secon-commnent number-comment">
+                                    <span class="name-user">Nguyễn Tuấn Tú</span> -
+                                    <span class="time-date">10:25-26 tháng 9,2017</span>
+                                    <p class="content-comment">
+                                        Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                    </p>
+                                </div>
+                            </div>
+                            <textarea class="textarea-answer"></textarea>
+                            <button class="btn btn-answer">Trả lời</button>
+                            <div class="clear-both"></div>
+                        </div>
+                    </li>      <!-- Some comment -->
+                    <li class="some-comment">      <!-- Some comment -->
+                        <div class="float-left ava-user">
+                            <img src="img/logo/ava-user.png"/>
+                        </div>
+                        <div class="div-some-comment">
+                            <div class="some-comment-text float-right">
+                                <span class="name-user">Nguyễn Tuấn Tú</span> -
+                                <span class="time-date">10:25-26 tháng 9,2017</span>
+                                <div class='rating-stars float-right'>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                </div>
+                                <p>Khóa học này rất bổ ích, nhờ nó mà giờ kiến thức của em vững hơn nhiều,
+                                    đã theo kịp bài học trên lớp rồi. Cảm ơn chị rất nhiều.
+                                </p>
+                                <span class="comment-like active">
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                <span class="number-like">2</span><span> Thích</span>
+                            </span>
+                                <span class="comment-answer">
+                                <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                <span class="span-comment-answer">Trả lời</span>
+                            </span>
+                                <div class="secon-commnent number-comment">
+                                    <span class="name-user">Nguyễn Tuấn Tú</span> -
+                                    <span class="time-date">10:25-26 tháng 9,2017</span>
+                                    <p class="content-comment">
+                                        Chị ơi sao bài này f'(x) > 0 lại <=> x > -3<br>Bài này em chưa hiểu chị giải thích giúp em với ạ
+                                    </p>
+                                </div>
+                            </div>
+                            <textarea class="textarea-answer"></textarea>
+                            <button class="btn btn-answer">Trả lời</button>
+                            <div class="clear-both"></div>
+                        </div>
+                    </li>      <!-- Some comment -->
+                </ul>
+            </div>      <!--  content-detail-sub  -->
+            <div class="col-md-4 col-xs-12">      <!-- CONTENT RIGHT -->
+                <div class="info-teacher-detail-sub">       <!-- info-teacher-detail-sub -->
+                    <div class="img-info-teacher-detail">       <!--  img-info-teacher-detail  -->
+                        <a href="#">
+                            <div class="home-img-bgc" style="background: url(img/gv/gv1-bgc.png) center no-repeat;">
+                            </div>
+                        </a>
+                    </div>      <!--  img-info-teacher-detail  -->   <!--  img-info-teacher-detail  -->
+                    <div class="content-info-teacher-detail col-md-12">       <!--   content-info-teacher-detail  -->
+                        <p class="first-p">Thành tích đạt được</p>
+                        <ul class="first-ul">
+                            <li>Á khoa ĐHKHTN – ĐHQGHN 2010. Tốt nghiệp lới Tài năng Toán học K1 ĐHQGHN</li>
+                            <li>Giải Nhì HSG cấp Tỉnh môn Toán tỉnh Thái Bình</li>
+                        </ul>
+                        <p class="secon-p">Kinh nghiệm giảng dạy:</p>
+                        <ul>
+                            <li>
+                                <i class="fa fa-book" aria-hidden="true"></i>&ensp;25 Khóa học
+                            </li>
+                            <li>
+                                <i class="fa fa-play-circle" aria-hidden="true"></i>&ensp;250 Bài giảng
+                            </li>
+                            <li>
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>&ensp;400 Giờ giảng dạy
+                            </li>
+                            <li>
+                                <i class="fa fa-users" aria-hidden="true"></i>&ensp;400 Học viên
+                            </li>
+                            <li>
+                                <i class="fa fa-check-square-o" aria-hidden="true"></i>&ensp;10000 Câu hỏi đã giải đáp
+                            </li>
+                        </ul>
+                        <button class="btn btn-default btn-details">Chi tiết</button>
+                    </div>        <!--   content-info-teacher-detail  -->
+                </div>      <!-- info-teacher-detail-sub -->
+            </div>      <!-- CONTENT RIGHT -->
+        </div>
+
+        <div class="slide-details-sub slide-details-sub-smart">       <!-- Slide Khóa học -->
+            <h4 class="text-center">Các khóa học liên quan</h4>
+
+            <ul class="home-menu-slide .home-menu-slide-smart">       <!-- MENU SLIDE -->
+                <li class="active"><a class="home-meu-slide-item home-meu-slide-item-smart" data-toggle="tab" href="#secondary-tab1">khóa học vip</a></li>
+                <li><a class="home-meu-slide-item home-meu-slide-item-smart" data-toggle="tab" href="#secondary-tab2">khóa học mua nhiều</a></li>
+                <li><a class="home-meu-slide-item home-meu-slide-item-smart" data-toggle="tab" href="#secondary-tab3">miễn phí</a></li>
+            </ul>      <!-- MENU SLIDE -->
+            <div class="tab-content " >
+                <div class="tab-pane fade in active secondary-tab " id="secondary-tab1">
+                    <div class="variable-width">     <!-- home-slide-primary -->
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip ">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip ">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade secondary-tab" id="secondary-tab2">
+                    <div class="variable-width">     <!-- home-slide-primary -->
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip ">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip ">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade secondary-tab" id="secondary-tab3">
+                    <div class="variable-width">     <!-- home-slide-primary -->
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip ">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip ">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                        <div class="item-subject-smart">
+                            <div class="home-item-slide home-item-slide-smart">       <!-- ITEM SLIDE -->
+                                <div class="div-vip active">
+                                    <img src="img/logo/vip-smart.png" height="28" width="28" class="img-div-vip-smart"/>
+                                </div>
+                                <a href="#">
+                                    <div class="home-img-bgc home-img-bgc-smart" style="background: url(img/gv/gv2-bgc.png) center no-repeat;">
+
+                                    </div>
+                                </a>
+                                <div class="home-content-slide">
+                                    <img class="item-sale-img img-responsive" src="img/logo/item-sale.png"/>
+                                    <span class="item-sale-text">30%</span>
+                                    <a href="#"><p class="name-subject-slide">Bồi dưỡng tiếng việt lớp 5</p></a>
+                                    <p class="cost-subject-slide"><span class="color-red robo-bold">680.000</span>đ&emsp;<span class="old-cost-subject">850.000đ</span></p>
+                                </div>
+                            </div>      <!-- ITEM SLIDE -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      <!-- Slide Khóa học -->
+    </div>
+</section>      <!--  SECTION DETAILS SUB -->
+
+
+<footer class="footer-desktop">     <!-- FOOTER DESKTOP -->
+    <section class="first-footer">
+        <div class="container">
+            <div class="logo-sent-mail float-left">
+                <img src="img/logo/logo-mail.png" height="46" width="91"/>
+            </div>
+            <div class="text-decoration-mail float-left">
+                <span>để không bỏ lỡ thông tin hữu ích từ chúng tôi</span>
+                <p>Hãy đăng ký nhận e-mail</p>
+            </div>
+
+            <div class="input-group float-right" style="z-index: 0;">
+                <input class="form-control " placeholder="Nhập địa chỉ e-mail" type="email" name="email">
+                <div class="input-group-btn">
+                    <button class="btn btn-default btn-signup-email" type="submit">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secon-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <ul>
+                                <p>Hỗ trợ học sinh</p>
+                                <li><a href="#">Các câu hỏi thường gặp</a></li>
+                                <li><a href="#">Hướng dẫn thanh toán học phí</a></li>
+                                <li><a href="#">Chính sách hoàn học phí</a></li>
+                                <li><a href="#">Hotline: 0982 780 986</a></li>
+                                <li><a href="#">CSKH: 0982 780 986</a></li>
+                                <li><a href="#">Hỗ trợ:Từ 8h00 - 22h00 hàng ngày</a></li>
+                                <li><a href="#">Email: ìnfo@hoccungthukhoa.vn</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 ">
+                            <ul>
+                                <p>Giới thiệu</p>
+                                <li><a href="#">Giới thiệu học cùng thủ khoa</a></li>
+                                <li><a href="#">Danh sách khóa học</a></li>
+                                <li><a href="#">Điều khoản dịch vụ và chính sách bảo mật</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul>
+                                <p>Thanh toán an toàn</p>
+                                <li><a href="#">Thanh toán qua ngân hàng</a></li>
+                                <li><a href="#">Thanh toán qua thẻ điện thoại, Mclass</a></li>
+                                <li><a href="#">Thanh toán qua COD (thu tiền tận nơi)</a></li>
+                                <li><a href="#">Thanh toán bằng tiền mặt tại văn phòng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 div-btn-collab">
+                    <button class="btn btn-default btn-collaborate">
+                        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>&ensp;Hợp tác giảng dạy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>       <!-- FOOTER DESKTOP -->
+
+<footer class="footer-smart">
+    <section class="first-footer first-footer-smart">
+        <div class="container text-center">
+            <div class="logo-sent-mail float-left">
+                <img src="img/logo/logo-mail.png" class="img-responsive"/>
+            </div>
+            <div class="text-decoration-mail float-left">
+                <span>để không bỏ lỡ thông tin hữu ích từ chúng tôi</span>
+                <p>Hãy đăng ký nhận e-mail</p>
+            </div>
+
+            <div class="input-group" style="z-index: 0;">
+                <input class="form-control " placeholder="Nhập địa chỉ e-mail" type="email" name="email">
+                <div class="input-group-btn">
+                    <button class="btn btn-default btn-signup-email" type="submit">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secon-footer secon-footer-smart">
+        <div class="container text-center div-btn-collab">
+            <button class="btn btn-default btn-collaborate">
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>&ensp;Hợp tác giảng dạy
+            </button>
+        </div>
+        <!--<div class="clear-both"></div>-->
+        <div class="container support-smart">
+            <div class="row">
+                <div class="col-xs-5">
+                    <ul>
+                        <p>Hỗ trợ học sinh</p>
+                        <li><a href="#">Các câu hỏi thường gặp</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán học phí</a></li>
+                        <li><a href="#">Chính sách hoàn học phí</a></li>
+                        <li><a href="#">Hotline: 0982 780 986</a></li>
+                        <li><a href="#">CSKH: 0982 780 986</a></li>
+                        <li><a href="#">Hỗ trợ:Từ 8h00 - 22h00 hàng ngày</a></li>
+                        <li><a href="#">Email: ìnfo@hoccungthukhoa.vn</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-7">
+                    <ul>
+                        <p>Giới thiệu</p>
+                        <li><a href="#">Giới thiệu học cùng thủ khoa</a></li>
+                        <li><a href="#">Danh sách khóa học</a></li>
+                        <li><a href="#">Điều khoản dịch vụ và chính sách bảo mật</a></li>
+                    </ul>
+                    <ul>
+                        <p>Thanh toán an toàn</p>
+                        <li><a href="#">Thanh toán qua ngân hàng</a></li>
+                        <li><a href="#">Thanh toán qua thẻ điện thoại, Mclass</a></li>
+                        <li><a href="#">Thanh toán qua COD (thu tiền tận nơi)</a></li>
+                        <li><a href="#">Thanh toán bằng tiền mặt tại văn phòng</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="clear-both"></div>
+    </section>
+</footer>       <!-- FOOTER SMART -->
+
+</body>
+
+<script>
+
+</script>
+</html>

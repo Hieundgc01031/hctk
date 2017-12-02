@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <title>Thanh toan</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jschung.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/payment.js"></script>
+
+
+</head>
+<noscript >
+    <div class="container">
+        <h2 >Xin lỗi trình duyệt của bạn không hỗ trợ javascript</h2>
+        <p>Xin vui lòng cập nhật hoặc tải về 1 trong các trình duyệt dưới đây:  </p>
+        <p>link ==><a href="https://www.mozilla.org/vi/firefox/new/">MOZILLA FIREFOX</a></p>
+        <p>link ==><a href="https://www.google.com/intl/vi/chrome/browser/desktop/index.html">GOOGLE CHROME</a></p>
+        <p>link ==><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48126">EDGE FOR WIN 10</a></p>
+        <p>link ==><a href="https://www.microsoft.com/vi-vn/download/details.aspx?id=40902">IE 11 FOR WIN7</a></p>
+    </div>
+</noscript>
+<body>
+<div class="container alert-ie8">
+    <h2 >Xin lỗi trình duyệt của bạn không hỗ trợ javascript</h2>
+    <p>Xin vui lòng cập nhật hoặc tải về 1 trong các trình duyệt dưới đây:  </p>
+    <p>link ==><a href="https://www.mozilla.org/vi/firefox/new/">MOZILLA FIREFOX</a></p>
+    <p>link ==><a href="https://www.google.com/intl/vi/chrome/browser/desktop/index.html">GOOGLE CHROME</a></p>
+    <p>link ==><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48126">EDGE FOR WIN 10</a></p>
+    <p>link ==><a href="https://www.microsoft.com/vi-vn/download/details.aspx?id=40902">IE 11 FOR WIN7</a></p>
+</div>
+
+<header class="container-fluid">        <!-- HEADER -->
+    <div class="first-header row">      <!-- CONTACT -->
+        <div class="container">
+            <ul>
+                <li class="none-border">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <span class="text-upper">Hotline: </span>
+                    <span class="robo-bold">0982.117.702</span>
+                </li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Đội ngũ giảng viên</a></li>
+                <li class="none-border"><a href="#">Liên hệ</a></li>
+                <li class="float-right none-border header-signup"  >
+                    <button class="btn-header-signup" data-toggle="modal" data-target="#modalSignup">
+                        <i class="fa fa-user-plus" aria-hidden="true">&ensp;Đăng ký</i>
+                    </button>
+
+                </li>
+
+                <li class="float-right none-border header-signin">
+                    <button class="btn-header-signup" data-toggle="modal" data-target="#modalSignin">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>&ensp;Đăng nhập
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>       <!-- CONTACT -->
+    <nav class="second-header">     <!-- MENNU -->
+        <div class="container">
+            <div class="header-menu">       <!-- HEADER MENU -->
+                <div class="header-menu-item">
+                    <img src="img/logo/logo.png" height="40" width="123"/>
+                </div>
+                <div class="border-bottom home-icon-home header-menu-item">
+                    <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+                </div>
+                <div class="home-li-advanced header-menu-item">
+                    <a>Khóa học nâng cao&ensp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+
+                    <div class="container home-first-menu first-menu-advanced">     <!-- MENU ADVANCED -->
+                        <div class="first-menu-arrow-up"></div>
+                        <div class="row">
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-primary-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối tiểu học</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-junior-advanced-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối trung học cơ sở</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-advanced-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối trung học phổ thông</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+                            <ul class="ul-school">
+                                <li class="text-center">
+                                    <img src="img/logo/logo-menu.png" height="254" width="242"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>      <!-- MENU ADVANCED -->
+
+                <div class="home-li-basic header-menu-item">        <!-- MENU BASIC -->
+                    <a>Khóa học cơ bản&ensp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="container home-first-menu first-menu-basic">
+                        <div class="first-menu-arrow-up first-menu-basic-arrow-up"></div>
+                        <div class="row">
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-primary-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối tiểu học</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-junior-advanced-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối trung học cơ sở</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+
+                            <ul class="col-md-3 ul-school">
+                                <li class="li-school li-advanced-school"><a href="#"><img src="img/logo/primary.png" height="18" width="20"/>khối trung học phổ thông</a></li>
+                                <li class="li-subject-first">
+                                    <a href="#">Tiếng Việt</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first">
+                                    <a href="#">Toán</a>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li class="li-subject-first text-upper">
+                                    <a href="#">Tiếng anh</a>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+                            <ul class="ul-school">
+                                <li class="text-center">
+                                    <img src="img/logo/logo-menu.png" height="254" width="242"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>      <!-- MENU BASIC -->
+
+                <div class="float-right header-menu-item header-menu-cart">      <!-- HEADER_MENU_ITEM -->
+                    <div class="shopping-cart">
+                        <img src="img/logo/cart.png" height="18" width="18"/>
+                        <div class="number-shopping-cart">8</div>
+                        <div class="tooltip-shopping-cart">
+                            <p>Bạn có 2 khóa học trong giỏ hàng</p>
+                            <div class="div-line"></div>
+                            <ul>
+                                <li>
+                                    <div class="img-shopping-cart float-left">
+                                        <a href="#"><img src="img/logo/shoppingcard.jpg" /></a>
+                                    </div>
+                                    <div class="text-shopping-cart float-left">
+                                        <a href="#"><span>Bồi dưỡng Toán lớp 5 (2017-2018)</span></a>
+                                        <p><span>680.000</span>đ</p>
+                                    </div>
+                                    <div class="float-right"><i class="fa fa-trash" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="clear-both"></div>
+                                    <div class="div-line"></div>
+                                </li>
+                                <li>
+                                    <div class="img-shopping-cart float-left">
+                                        <a href="#"><img src="img/logo/shoppingcard.jpg" /></a>
+                                    </div>
+                                    <div class="text-shopping-cart float-left">
+                                        <a href="#"><span>Ôn luyện Vật Lý lớp 6 (2017-2018)</span></a>
+                                        <p><span>680.000</span> đ</p>
+                                    </div>
+                                    <div class="float-right"><i class="fa fa-trash" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="clear-both"></div>
+                                    <div class="div-line"></div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-default btn-see-cart float-left">
+                                Xem giỏ hàng
+                            </a>
+                            <a href="payment.html" class="btn btn-default btn-paid-cart float-right">
+                                Thanh toán
+                            </a>
+                        </div>      <!-- tooltip-shopping-cart -->
+                    </div>      <!-- SHOPPPING CART -->
+                </div>      <!-- HEADER_MENU_ITEM -->
+
+                <div class="float-right li-input-search header-menu-item">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>      <!-- HEARDER MENU -->
+        </div>
+    </nav>      <!-- MENNU -->
+</header>       <!-- HEADER -->
+
+<!--  MODAL ĐĂNG NHẬP ĐĂNG KÝ-->
+<div class="modal fade" id="modalSignup" role="dialog">     <!-- DANG KY  -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Đăng ký tài khoản</h5>
+            </div>
+            <div class="modal-body">
+                <p class="text-center">Đăng ký tài khoản Học cùng thủ khoa để học ngay hôm nay</p>
+                <div class="div-input text-center">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="text" class="form-control" placeholder="Họ tên">
+                    <input type="password" class="form-control" placeholder="Mật khẩu">
+                    <input type="checkbox" class="checkbox"><label>Tôi đồng ý với các<span>&ensp;<a href="#">Điều khoản sử dụng</a></span></label>
+                    <button class="btn btn-defalt btn-modal-signin form-control"  data-dismiss="modal" data-toggle="modal" data-target="#modalCode">Tiếp theo <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-fot">
+                <div class="modal-contact">
+                    <div class="div-icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">(04) 3555 1938</a></span>
+                    <div class="div-icon secon-icon">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">contact@hoccungthukhoa.vn</a></span>
+                </div>
+            </div>
+        </div>      <!--  modal-content  -->
+    </div>      <!--  modal-dialog  -->
+</div>      <!--  modalSignup  -->
+
+<div class="modal fade" id="modalCode" role="dialog">     <!-- DANG KY  -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Đăng ký tài khoản</h5>
+            </div>
+            <div class="modal-body">
+                <p class="text-left">Bạn vui lòng nhập mã kích hoạt nhận được trong email đã đăng ký!</p>
+                <p>Sau 4 giờ nếu không kích hoạt, bạn phải đăng ký lại.</p>
+                <div class="div-input text-center">
+                    <input type="text" class="form-control" placeholder="Nhập mã kích hoạt">
+                    <p><a href="#">Bấm vào đây </a> nếu bạn chưa nhận được email kích hoạt.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="btn-defalt form-control btn-cancel" data-dismiss="modal">Hủy <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn-defalt btn-modal-code form-control" data-dismiss="modal" data-toggle="modal" data-target="#modalSuccess">Đăng ký <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-fot">
+                <div class="modal-contact">
+                    <div class="div-icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">(04) 3555 1938</a></span>
+                    <div class="div-icon secon-icon">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">contact@hoccungthukhoa.vn</a></span>
+                </div>
+            </div>
+        </div>      <!--  modal-content  -->
+    </div>      <!--  modal-dialog  -->
+</div>      <!--  modalSignup  -->
+
+<div class="modal fade" id="modalSuccess" role="dialog">     <!-- DANG KY  -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Đăng ký tài khoản</h5>
+            </div>
+            <div class="modal-body text-center">
+                <div class="logo-check "><img src="img/logo/check.png" height="60" width="60"/></div>
+                <p class="">Đăng ký thành công <br>
+                    tài khoản Học cùng thủ khoa.
+                </p>
+                <button class="btn btn-success-signup form-control" data-dismiss="modal">Hoàn tất</button>
+            </div>
+        </div>      <!--  modal-content  -->
+    </div>      <!--  modal-dialog  -->
+</div>      <!--  modalSuccess  -->
+
+<div class="modal fade" id="modalSignin" role="dialog">     <!-- DANG NHAP  -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Đăng nhập</h5>
+            </div>
+            <div class="modal-body">
+                <div class="div-logo-user text-center">
+                    <img src="img/logo/ava-login.png"/>
+                </div>
+                <div class="div-input text-center">
+                    <input type="text" class="form-control" placeholder="Tên tài khoản">
+                    <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+                    <button class="btn btn-defalt btn-modal-signin form-control">đăng nhập</button>
+                    <button class=" btn-modal-signup" data-dismiss="modal" data-toggle="modal" data-target="#modalSignup">Đăng ký tài khoản</button>
+                </div>
+                <div class="clear-both"></div>
+            </div>
+            <div class="modal-fot">
+                <div class="modal-contact">
+                    <div class="div-icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">(04) 3555 1938</a></span>
+                    <div class="div-icon secon-icon">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+                    <span><a href="#">contact@hoccungthukhoa.vn</a></span>
+                </div>
+            </div>
+        </div>      <!--  modal-content  -->
+    </div>      <!--  modal-dialog  -->
+</div>      <!--  modalSignin  -->
+
+<section class="tittle-list-sub tittle-list-sub-payment">
+    <div class="container text-center">
+        <h5>Giỏ hàng của tôi</h5>
+        <p>
+            <a href="index.html">Trang chủ</a>&ensp;
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>&ensp;
+            <a href="#" id="a-tittle">Thanh toán</a>&ensp;
+
+        </p>
+    </div>
+</section>
+
+<section class="container section-first-payment">
+    <div class="row payment-my-cart">
+        <div class="container content-my-cart">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" style="padding-left: 15px;">
+                            Khóa học
+                        </th>
+                        <th class="pdl-15">
+                            Giảm giá
+                        </th>
+                        <th class="pdl-15">
+                            Thành tiền
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr >
+                        <td width="25%" class="pdr-15">
+                            <img src="img/gv/gv1-bgc.png" class="img-responsive"/>
+                        </td>
+                        <td width="25%" class="pdr-15">
+                            <span>
+                                Giúp bé tự tin hơn khi vào lớp 1 (2017 - 2018)
+                            </span>
+                            <p>
+                                <span class="td-money">1.200.000</span>đ
+                            </p>
+                        </td>
+                        <td class="pdl-15" width="20%">
+                            <span class="td-money">350.000</span>đ
+                        </td>
+                        <td class="pdl-15"  width="20%">
+                            <span class="td-money">850.000</span>đ
+                        </td>
+                        <td >
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td width="25%" class="pdr-15">
+                            <img src="img/gv/gv1-bgc.png" class="img-responsive"/>
+                        </td>
+                        <td width="25%" class="pdr-15">
+                            <span>
+                                Giúp bé tự tin hơn khi vào lớp 1 (2017 - 2018)
+                            </span>
+                            <p>
+                                <span class="td-money">1.200.000</span>đ
+                            </p>
+                        </td>
+                        <td class="pdl-15" width="20%">
+                            <span class="td-money">350.000</span>đ
+                        </td>
+                        <td class="pdl-15"  width="20%">
+                            <span class="td-money">850.000</span>đ
+                        </td>
+                        <td >
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr >
+                        <td colspan="2">
+
+                        </td>
+                        <td class="pdl-15">
+                            <span>Tổng tiền:</span>
+                        </td>
+                        <td class="pdl-15"  width="20%">
+                            <span class="td-money">1.850.000</span>đ
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <a class="btn float-left btn-see-other-course" href="#">
+        xem các khóa học khác
+    </a>
+    <a class="btn float-right btn-payment-my-cart" href="#">
+        xem các khóa học khác
+    </a>
+</section>
+
+<section class="container section-secon-payment">
+    <div class="row">
+        <div class="col-md-4 col-sm-4 first-section-secon-payment section-secon-payment-content">
+            <p class="p-tittle">
+                Thông tin người nhận
+            </p>
+            <p class="robo-bold">
+                Công ty cổ phần dịch vụ công nghệ và giáo dục Việt Nam
+            </p>
+            <ol>
+                <li>
+                    Khóa học Giúp bé tự tin hơn khi vào lớp 1 (2017 - 2018)
+                </li>
+                <li>
+                    Khóa học Giúp bé tự tin hơn khi vào lớp 1 (2017 - 2018)
+                </li>
+            </ol>
+            <div class="float-left">
+                Tổng học phí
+            </div>
+            <div class="float-right">
+                <span>
+                    1.550.000
+                </span>đ
+            </div>
+            <div class="clear-both"></div>
+            <div class="float-left">
+                Tài khoản có
+            </div>
+            <div class="float-right">
+                <span>
+                    0
+                </span>đ
+            </div>
+            <div class="clear-both"></div>
+            <div class="float-left">
+                <span>Cần nạp thêm</span>
+            </div>
+            <div class="float-right">
+                <span>
+                    1.550.000
+                </span>đ
+            </div>
+            <div class="clear-both"></div>
+        </div>
+        <div class="col-md-4 col-sm-4 secon-section-secon-payment section-secon-payment-content">
+            <p class="p-tittle">
+                Thông tin thanh toán
+            </p>
+            <p class="robo-bold">
+                Mô tả:
+            </p>
+            <p>
+                Địa chỉ: Tầng 4, tòa nhà 25T1, KĐT Đông Nam, đường Trần Duy Hưng, phường Trung Hòa, quận Cầu Giấy, TP. Hà Nội
+            </p>
+            <div class="float-left">
+                Người đại diện
+            </div>
+            <div class="float-right">
+                <span>
+                    Phạm Ngọc Thập
+                </span>đ
+            </div>
+            <div class="clear-both"></div>
+            <div class="float-left">
+                Email
+            </div>
+            <div class="float-right">
+                <span>
+                    contact@vnedutech.vn
+                </span>đ
+            </div>
+            <div class="clear-both"></div>
+            <div class="float-left">
+                Điện thoại
+            </div>
+            <div class="float-right">
+                <span>
+                    84-24-3555 1938
+                </span>đ
+            </div>
+            <div class="clear-both"></div>
+        </div>
+        <div class="col-md-4 col-sm-4 third-section-secon-payment section-secon-payment-content">
+            <div class="bgc-third text-center">
+                <h5>Xem lại đơn hàng</h5>
+                <div class="float-left">Tổng học phí</div>
+                <div class="float-right"><span>1.550.000</span>đ</div>
+                <div class="clear-both"></div>
+                <div class="float-left">Tài khoản có</div>
+                <div class="float-right"><span>0</span>đ</div>
+                <div class="clear-both"></div>
+                <div class="float-left"><span>Cần nạp thêm</span></div>
+                <div class="float-right"><span>1.550.000</span>đ</div>
+                <div class="clear-both"></div>
+                <button class="btn btn-payment-step2">Thanh toán</button>
+            </div>
+        </div>
+    </div>
+    <div class="btn btn-back-step1"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Quay lại</div>
+</section>
+
+<section class="content-payment container section-third-payment">
+    <h6 class="h6-tittle">Vui lòng chọn phương thức thanh toán <span class="color-orange">*</span></h6>
+    <ul class="ul-menu-payment row">       <!--  TAB MENU PAYMENT -->
+        <li class="col-md-3 active the-payment the-payment1">
+            <a class="menu-payment text-center" data-toggle="tab" href="#tab-payment-1">
+                <img src="img/logo/logo.png" height="40" width="123"/>
+                <span>Thẻ của học cùng thủ khoa</span>
+            </a>
+        </li>
+        <li class="col-md-3 the-payment the-payment2">
+            <a class="menu-payment text-center" data-toggle="tab" href="#tab-payment-2">
+                <img src="img/logo/payment2.png" height="44" width="50"/>
+                <span>Chuyển khoản</span>
+            </a>
+        </li>
+        <li class="col-md-3 the-payment the-payment3">
+            <a class="menu-payment text-center" data-toggle="tab" href="#tab-payment-3">
+                <img src="img/logo/payment3.png" height="44" width="25"/>
+                <span>Thẻ cào  điện thoại</span>
+            </a>
+        </li>
+        <li class="col-md-3 the-payment the-payment4">
+            <a class="menu-payment text-center" data-toggle="tab" href="#tab-payment-4">
+                <img src="img/logo/payment4.png" height="23" width="75"/>
+                <span>Thẻ Visa/Master Card</span>
+            </a>
+        </li>
+    </ul>       <!--  TAB MENU PAYMENT -->
+    <div class="clear-both"></div>
+    <div class="tab-content tab-content-payment">
+        <div class="tab-pane in active fade tab-payment-1" id="tab-payment-1">       <!--  tab-payment-1  -->
+            <div class="row input-number-card input-number-card1">
+                <label for="number-card-hctk" class="col-md-2">Mã thẻ cào học cùng thủ khoa</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Nhập mã số thẻ cào" id="number-card-hctk"></input>
+                </div>
+            </div>
+            <div class="row input-number-card input-number-card2">
+                <label for="seri-card-hctk" class="col-md-2">Số seri</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Nhập mã số thẻ cào" id="seri-card-hctk"></input>
+                </div>
+            </div>
+            <div class="row input-number-card input-number-card3">
+                <label for="number-confirm-hctk" class="col-md-2">Mã xác nhận</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Nhập mã số thẻ cào" id="number-confirm-hctk"></input>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2">
+                    <div class="div-captcha">
+                        CAPTCHA
+                    </div>
+                </div>
+            </div>
+            <div class="row div-btn">
+                <div class="col-md-2 col-md-offset-2">
+                    <button class="btn btn-cancel-payment">Hủy</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-payment btn-payment-step3">Thanh toán</button>
+                </div>
+            </div>
+        </div>      <!--  tab-payment-1  -->
+
+        <div class="tab-pane fade tab-payment-2" id="tab-payment-2">       <!--  tab-payment-2  -->
+            <h6>Chọn ngân hàng thanh toán <span class="color-orange">*</span></h6>
+            <div class="row select-bank">
+                <div class="col-md-6">
+                    <div class="div-bank div-bank1">
+                        <img src="img/logo/techcom.png" height="47" width="104"/>
+                        <p class="name-bank">
+                            Ngân hàng TMCP Kỹ Thương Việt Nam – TECHCOMBANK
+                        </p>
+                        <p>
+                            - Chủ tài khoản: Công ty cổ phần dịch vụ công nghệ và giáo dục VN
+                        </p>
+                        <p>
+                            - Mã số tài khoản: 190.21359720.201
+                        </p>
+                        <p>
+                            - Chi nhánh: Phòng giao dịch Cầu Giấy
+                        </p>
+                        <p>
+                            - Nội dung: Họ tên - Email tài khoản - Số điện thoại
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="div-bank div-bank2">
+                        <img src="img/logo/vietcom.png" height="47" width="143"/>
+                        <h6 class="name-bank">
+                            Ngân hàng TMCP Kỹ Thương Việt Nam – TECHCOMBANK
+                        </h6>
+                        <p>
+                            - Chủ tài khoản: Công ty cổ phần dịch vụ công nghệ và giáo dục VN
+                        </p>
+                        <p>
+                            - Mã số tài khoản: 190.21359720.201
+                        </p>
+                        <p>
+                            - Chi nhánh: Phòng giao dịch Cầu Giấy
+                        </p>
+                        <p>
+                            - Nội dung: Họ tên - Email tài khoản - Số điện thoại
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="div-bank div-bank3">
+                        <img src="img/logo/bidv.png" height="47" width="146"/>
+                        <h6 class="name-bank">
+                            Ngân hàng TMCP Kỹ Thương Việt Nam – TECHCOMBANK
+                        </h6>
+                        <p>
+                            - Chủ tài khoản: Công ty cổ phần dịch vụ công nghệ và giáo dục VN
+                        </p>
+                        <p>
+                            - Mã số tài khoản: 190.21359720.201
+                        </p>
+                        <p>
+                            - Chi nhánh: Phòng giao dịch Cầu Giấy
+                        </p>
+                        <p>
+                            - Nội dung: Họ tên - Email tài khoản - Số điện thoại
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="div-bank div-bank4">
+                        <img src="img/logo/viettin.png" height="47" width="190"/>
+                        <h6 class="name-bank">
+                            Ngân hàng TMCP Kỹ Thương Việt Nam – TECHCOMBANK
+                        </h6>
+                        <p>
+                            - Chủ tài khoản: Công ty cổ phần dịch vụ công nghệ và giáo dục VN
+                        </p>
+                        <p>
+                            - Mã số tài khoản: 190.21359720.201
+                        </p>
+                        <p>
+                            - Chi nhánh: Phòng giao dịch Cầu Giấy
+                        </p>
+                        <p>
+                            - Nội dung: Họ tên - Email tài khoản - Số điện thoại
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-cancel-payment float-left">Hủy</button>
+            <button class="btn btn-payment btn-payment-step3 float-right">Thanh toán</button>
+            <div class="clear-both"></div>
+        </div>
+
+        <div class="tab-pane fade tab-payment-3" id="tab-payment-3">       <!--  tab-payment-3  -->
+            <h6>Chọn nhà mạng <span class="color-orange">*</span></h6>
+            <div class="row select-service-phone">
+                <div class="col-md-2">
+                    <div class="div-img-phone active">
+                        <img src="img/logo/mobiphone.png" height="12" width="80"/>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="div-img-phone">
+                        <img src="img/logo/vinaphone.png" height="21" width="90"/>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="div-img-phone">
+                        <img src="img/logo/viettel.png" height="11" width="110"/>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="div-img-phone">
+                        <img src="img/logo/vietnammo.png" height="20" width="42"/>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="div-img-phone">
+                        <img src="img/logo/gmobile.png" height="27" width="80"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row input-number-card input-number-card1">
+                <label for="number-card-phone" class="col-md-2">Mã thẻ cào điện thoại</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Nhập mã số thẻ cào" id="number-card-phone"></input>
+                </div>
+            </div>
+            <div class="row input-number-card input-number-card2">
+                <label for="seri-card-phone" class="col-md-2">Số seri</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Nhập mã số thẻ cào" id="seri-card-phone"></input>
+                </div>
+            </div>
+            <div class="row input-number-card input-number-card3">
+                <label for="number-confirm-phone" class="col-md-2">Mã xác nhận</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Nhập mã số thẻ cào" id="number-confirm-phone"></input>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2">
+                    <div class="div-captcha">
+                        CAPTCHA
+                    </div>
+                </div>
+            </div>
+            <div class="row div-btn">
+                <div class="col-md-2 col-md-offset-2">
+                    <button class="btn btn-cancel-payment">Hủy</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-payment btn-payment-step3">Thanh toán</button>
+                </div>
+            </div>
+        </div>      <!--  tab-payment-3  -->
+
+        <div class="tab-pane fade tab-payment-4" id="tab-payment-4">       <!--  tab-payment-4 -->
+            DOING
+        </div>
+    </div>
+    <div class="clear-both"></div>
+</section>
+
+<section class="container section-four-payment">
+    <div class="col-md-8 col-md-offset-2 text-center .col-xs-12">
+        <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+        <p>Đơn hàng của bạn đã được gửi về bộ phận chăm sóc khách hàng của Học cùng thủ khoa, chúng tôi sẽ liên lạc lại để xác nhận đơn hàng trong thời gian sớm nhất.
+        </p>
+        <p>
+            Thông tin chi tiết về đơn hàng đã được gửi đến địa chỉ email hoangquyen1999@gmail.com. Nếu không tìm thấy vui lòng kiểm tra trong hộp thư Spam hoặc Junk Folder.
+        </p>
+        <p>
+            Nếu quý khách hàng có thắc mắc, xin vui lòng liên hệ với chúng tôi qua số hotline
+        </p>
+        <p>
+            Trân trọng!
+        </p>
+        <a class="btn btn-see-other-course" href="list-subject.html">
+            Xem các khóa học khác
+        </a>
+    </div>
+</section>
+
+<footer class="footer-desktop">     <!-- FOOTER DESKTOP -->
+    <section class="first-footer">
+        <div class="container">
+            <div class="logo-sent-mail float-left">
+                <img src="img/logo/logo-mail.png" height="46" width="91"/>
+            </div>
+            <div class="text-decoration-mail float-left">
+                <span>để không bỏ lỡ thông tin hữu ích từ chúng tôi</span>
+                <p>Hãy đăng ký nhận e-mail</p>
+            </div>
+
+            <div class="input-group float-right" style="z-index: 0;">
+                <input class="form-control " placeholder="Nhập địa chỉ e-mail" type="email" name="email">
+                <div class="input-group-btn">
+                    <button class="btn btn-default btn-signup-email" type="submit">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secon-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <ul>
+                                <p>Hỗ trợ học sinh</p>
+                                <li><a href="faq.html">Các câu hỏi thường gặp</a></li>
+                                <li><a href="#">Hướng dẫn thanh toán học phí</a></li>
+                                <li><a href="#">Chính sách hoàn học phí</a></li>
+                                <li><a href="#">Hotline: 0982 780 986</a></li>
+                                <li><a href="#">CSKH: 0982 780 986</a></li>
+                                <li><a href="#">Hỗ trợ:Từ 8h00 - 22h00 hàng ngày</a></li>
+                                <li><a href="#">Email: ìnfo@hoccungthukhoa.vn</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 ">
+                            <ul>
+                                <p>Giới thiệu</p>
+                                <li><a href="#">Giới thiệu học cùng thủ khoa</a></li>
+                                <li><a href="#">Danh sách khóa học</a></li>
+                                <li><a href="#">Điều khoản dịch vụ và chính sách bảo mật</a></li>
+                                <li><a href="list-new.html">Tin tức</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul>
+                                <p>Thanh toán an toàn</p>
+                                <li><a href="#">Thanh toán qua ngân hàng</a></li>
+                                <li><a href="#">Thanh toán qua thẻ điện thoại, Mclass</a></li>
+                                <li><a href="#">Thanh toán qua COD (thu tiền tận nơi)</a></li>
+                                <li><a href="#">Thanh toán bằng tiền mặt tại văn phòng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 div-btn-collab">
+                    <button class="btn btn-default btn-collaborate">
+                        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>&ensp;Hợp tác giảng dạy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>       <!-- FOOTER DESKTOP -->
+
+<footer class="footer-smart">
+    <section class="first-footer first-footer-smart">
+        <div class="container text-center">
+            <div class="logo-sent-mail float-left">
+                <img src="img/logo/logo-mail.png" class="img-responsive"/>
+            </div>
+            <div class="text-decoration-mail float-left">
+                <span>để không bỏ lỡ thông tin hữu ích từ chúng tôi</span>
+                <p>Hãy đăng ký nhận e-mail</p>
+            </div>
+
+            <div class="input-group" style="z-index: 0;">
+                <input class="form-control " placeholder="Nhập địa chỉ e-mail" type="email" name="email">
+                <div class="input-group-btn">
+                    <button class="btn btn-default btn-signup-email" type="submit">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secon-footer secon-footer-smart">
+        <div class="container text-center div-btn-collab">
+            <button class="btn btn-default btn-collaborate">
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>&ensp;Hợp tác giảng dạy
+            </button>
+        </div>
+        <!--<div class="clear-both"></div>-->
+        <div class="container support-smart">
+            <div class="row">
+                <div class="col-xs-5">
+                    <ul>
+                        <p>Hỗ trợ học sinh</p>
+                        <li><a href="faq.html">Các câu hỏi thường gặp</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán học phí</a></li>
+                        <li><a href="#">Chính sách hoàn học phí</a></li>
+                        <li><a href="#">Hotline: 0982 780 986</a></li>
+                        <li><a href="#">CSKH: 0982 780 986</a></li>
+                        <li><a href="#">Hỗ trợ:Từ 8h00 - 22h00 hàng ngày</a></li>
+                        <li><a href="#">Email: ìnfo@hoccungthukhoa.vn</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-7">
+                    <ul>
+                        <p>Giới thiệu</p>
+                        <li><a href="#">Giới thiệu học cùng thủ khoa</a></li>
+                        <li><a href="#">Danh sách khóa học</a></li>
+                        <li><a href="#">Điều khoản dịch vụ và chính sách bảo mật</a></li>
+                        <li><a href="list-new.html">Tin tức</a></li>
+
+                    </ul>
+                    <ul>
+                        <p>Thanh toán an toàn</p>
+                        <li><a href="#">Thanh toán qua ngân hàng</a></li>
+                        <li><a href="#">Thanh toán qua thẻ điện thoại, Mclass</a></li>
+                        <li><a href="#">Thanh toán qua COD (thu tiền tận nơi)</a></li>
+                        <li><a href="#">Thanh toán bằng tiền mặt tại văn phòng</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="clear-both"></div>
+    </section>
+</footer>       <!-- FOOTER SMART -->
+</body>
+
+</html>
